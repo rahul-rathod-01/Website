@@ -1,0 +1,4759 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="csrf" content="{{page.csrf}}">
+        <title>{{page.title}}</title>
+        <link rel="icon" href="https://c240120.ssl.cf1.rackcdn.com/f4f824ef-985f-11eb-a8d5-42010a8a0ff4" type="image/gif" sizes="16x16" />
+        {{{page.css}}}
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous" />
+        
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,500,700' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+<style>
+/*Header Footer Start*/
+.main-header .dropdown-toggle::after{
+    display: none;
+}   
+    
+.row-fluid {
+  
+    margin: 0 auto !important;
+}
+body {
+    font-family: "Montserrat", sans-serif !important;
+    color: #505d66 !important;
+}
+    
+.masthead {
+    background-color: white !important;
+}
+    
+.container.navigation {
+    float: left;
+    width: 62%;
+    padding-left: 20px;
+    padding-top: 7px;
+}
+    
+.masthead a {
+    color: #6f7b82 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+    
+.masthead .pull-right {
+    padding-top: 27px !important;
+}
+    
+.logo-image-holder img {
+    padding-top: 7px !important;
+}
+    
+.container.navigation .nav-pills > .active > a,
+.container.navigation .nav-pills > .active > a:hover,
+.container.navigation .nav-pills > .active > a:focus {
+    background-color: #eeeeee !important;
+}
+    
+.footer a {
+    color: #505d66 !important;
+}
+    
+.icon-circle::before {
+    color: #6f7b82 !important;
+    content: "\f0c8" !important;
+}
+    
+.icon-facebook-sign::before {
+    content: "\f09a" !important;
+}
+    
+.icon-twitter-sign::before {
+    content: "\f099" !important;
+}
+    
+.icon-linkedin-sign::before {
+    content: "\f0e1" !important;
+}
+    
+.icon-phone-sign::before {
+    content: "\f095" !important;
+}
+    
+.main-nav ul li {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    line-height: 40px;
+}
+    
+.main-nav ul li a {
+    color: #6f7b82;
+    display: inline-block;
+}
+    
+.main-nav ul li ul {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #666;
+    display: none;
+    left: 0;
+    padding: 15px 0;
+    position: absolute;
+    top: 40px;
+    z-index: 99;
+    margin-left: 0;
+}
+    
+.main-nav ul li:hover ul {
+    display: block;
+}
+    
+.main-nav ul {
+    list-style: none;
+}
+    
+.main-nav ul li ul li {
+    border: medium none;
+    float: none;
+    margin: 0;
+    position: static;
+    white-space: nowrap;
+}
+    
+.main-nav ul li ul li {
+    white-space: nowrap;
+}
+    
+.main-nav ul li ul li a {
+    color: #6f7b82;
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+    
+.main-nav ul li ul li a:hover {
+    background: #90bdd9 none repeat scroll 0 0;
+    color: #ffffff !important;
+}
+    
+.main-nav ul li.menu-item-has-children > a::after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    margin-left: 5px;
+}
+    
+.main-nav ul li a:hover,
+.masthead .pull-right a:hover {
+    color: #90bdd9 !important;
+}
+    
+.masthead {
+    padding: 23px !important;
+}
+    
+.logo-image-holder img {
+    max-height: 60px !important;
+}
+    
+.center img {
+    min-width: 100% !important;
+}
+    
+    
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.main-header {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+.header-top {
+    position: relative;
+    font-size: 13px;
+    border-bottom: 1px solid #d0d1d6;
+}
+.black-bg-3 {
+    background-color: #212733 !important;
+}
+.header-top .top-left {
+    padding: 0;
+    margin: 0;
+}
+.header-top.light .links-nav li:last-child {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.header-top .links-nav li:last-child {
+    border-right: 1px solid #d0d1d6;
+}
+.header-top .links-nav li {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d4dae3;
+    display: inline-block;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #d0d1d6;
+}
+.header-top .links-nav li .fa {
+    color: #8fbbd9;
+    padding-right: 8px;
+    font-size: 16px;
+}
+.header-top .link-btn,
+.header-top .text,
+.header-top .social-links {
+    display: inline-block;
+}
+.header-top.light .social-links a,
+.header-top.light .social-links a:last-child {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.header-top.light .social-links a {
+    color: #d4dae3;
+}
+.header-top .social-links a {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 0px 16px;
+    line-height: 45px;
+    border-left: 1px solid #d0d1d6;
+}
+.header-top .top-left ul {
+    margin: 0;
+    padding: 0;
+}
+.main-header .header-upper {
+    position: relative;
+    z-index: 5;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+.main-header .header-upper.style-three .logo-outer {
+    padding: 32.5px 0;
+    position: relative;
+    z-index: 25;
+}
+.main-header .float-left {
+    float: left !important;
+}
+.sticky-header .logo img,
+.main-header .logo-outer .logo img {
+    width: 215px;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+.main-header .header-upper .upper-right {
+    position: relative;
+    padding-bottom: 20px;
+}
+.main-header .float-right {
+    float: right !important;
+}
+.main-header .nav-outer {
+    position: relative;
+}
+.main-header .main-menu {
+    position: relative;
+    float: left;
+}
+.main-header .navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.main-header .navbar-header {
+    display: none;
+}
+.main-header .main-menu .navbar-collapse {
+    padding: 0px;
+}
+.main-header .main-menu .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+.main-header .main-menu .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+}
+.main-header .main-menu .navigation {
+    position: relative;
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+}
+.main-header .main-menu .navigation > li {
+    position: relative;
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+.main-header .header-upper.style-three .main-menu .navigation > li > a {
+    padding: 45px 24px;
+}
+.main-header .main-menu .navigation > li > a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #262626;
+    line-height: 30px;
+    font-weight: 600;
+    opacity: 1;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    padding: 18px 24px;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+.main-header .main-menu .navigation > li > ul {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 270px;
+    padding: 20px 0px;
+    z-index: 100;
+    display: none;
+    background: #ffffff;
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+}
+.main-header .main-menu .navigation > li > ul > li {
+    position: relative;
+    width: 100%;
+    padding: 0px 35px;
+}
+.main-header .main-menu .navigation > li > ul > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #262626;
+    text-align: left;
+    padding-right: 0px !important;
+    text-transform: capitalize;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    font-family: "Montserrat", sans-serif;
+}
+.main-header .outer-box {
+    margin: 32px 0;
+    margin-left: 15px;
+    position: relative;
+    float: left;
+}
+.main-header .header-upper.style-three .search-box-outer {
+    border-left: 1px solid #efefef;
+}
+.main-header .search-box-outer {
+    position: relative;
+    left: 3px;
+    display: inline-block;
+    padding: 3px 0;
+    padding-left: 31px;
+}
+.main-header .search-box-btn {
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 0px 6px;
+    background: transparent;
+    border-radius: 50px 0px 0px 50px;
+    border: 0;
+}
+.main-header .search-box-outer .dropdown-menu,
+ul.dropdown-menu.pull-right.search-panel {
+    left: inherit !important;
+    right: 0;
+}
+.main-header .search-box-outer .dropdown-menu,
+ul.dropdown-menu.pull-right.search-panel {
+    top: 15px !important;
+    padding: 0px;
+    width: 280px;
+    border-radius: 0px;
+    background: #f7f8f9;
+}
+.sticky-header {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 0px 0px;
+    background: #ffffff;
+    z-index: 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.main-menu .navigation > li.dropdown:before {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #1d1d1d;
+    right: 5px;
+    top: 53%;
+    margin-top: -17px;
+    content: "\f107";
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    right: 0px;
+}
+.main-footer {
+    position: relative;
+    background-color: #191d26;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff;
+}
+.main-footer .widgets-section {
+    position: relative;
+    padding: 75px 0px 75px;
+    padding-bottom: 20px;
+}
+.main-footer .footer-widget {
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 0px;
+}
+.main-footer .col-lg-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.main-footer .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.main-footer .footer-logo {
+    position: relative;
+    margin-bottom: 34px;
+}
+.main-footer .footer-logo img {
+    width: 200px;
+    display: block;
+    max-width: 100%;
+}
+.main-footer .about-widget .text {
+    font-size: 16px;
+    color: #d4dae3;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+.main-footer .social-icon-three {
+    position: relative;
+    display: block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-widget ul li {
+    position: relative;
+    font-weight: 500;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.8em;
+}
+.footer-widget ul li:before {
+    position: absolute;
+    content: "\f105";
+    left: 0px;
+    top: 0px;
+    color: #fff;
+    font-family: "FontAwesome";
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+}
+.footer-widget ul li a,
+.footer-widget ul li,
+.footer-widget .textwidget p {
+    color: #ffffff;
+}
+.footer-widget ul li a {
+    padding: 0px 0px 0px 18px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.main-footer .footer-column .widget-title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+.main-footer .social-icon-three li {
+    display: inline-block;
+    margin-right: 10px;
+    border-bottom: 0;
+    padding: 0;
+}
+.main-footer .social-icon-three li a {
+    height: 50px;
+    width: 50px;
+    background-color: #2f333b;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    margin-right: 0px;
+    border-radius: 50%;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    padding: 0;
+}
+
+.main-footer .footer-column .widget-title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    line-height: 1.6em;
+
+    padding: 0px;
+    font-weight: 600;
+}
+.main-footer .newsletter-widget .text {
+    color: #d4dae3;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: bolder;
+}
+.footer-widget form {
+    position: relative;
+}
+.main-footer .newsletter-widget input {
+    height: 40px !important;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    background-color: #292c31;
+    border: 1px solid #fafafa;
+    font-size: 14px;
+    margin: 0;
+}
+.footer-widget form button {
+    width: 100%;
+    line-height: 1.8em;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    right: 0px;
+    top: 0px;
+    font-weight: 600;
+    background: rgb(102, 155, 202) !important;
+    border: 2px solid rgb(102, 155, 202);
+    padding: 11px 40px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+.btn-style-one:hover {
+    border-color: #285073;
+    color: #ffffff;
+}
+.main-footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.main-footer .menu li {
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+}
+.footer-bottom {
+    display: none;
+}
+.main-menu .navigation > li:hover > a {
+    color: #8fbbd9;
+}
+
+/*New H CSS*/
+figure {
+    margin: 0;
+}
+
+footer.main-footer {
+    font-family: "Work Sans", sans-serif;
+}
+
+h2.widget-title {
+    font-family: "Montserrat", sans-serif;
+}
+
+.dropdown-btn {
+    display: none;
+}
+
+span.social-channels {
+    display: none;
+}
+
+.header-top .links-nav li {
+    font-family: "Work Sans", sans-serif;
+    line-height: 46px !important;
+}
+
+.header-top .social-links a:last-child {
+    border-right: 1px solid #d0d1d6;
+}
+
+.header-top.light .social-links a {
+    margin-right: 0.7px;
+}
+
+.navbar-collapse.collapse.clearfix {
+    overflow: unset;
+}
+
+.main-header .main-menu .navigation > li > ul {
+    list-style: none;
+    margin: 0;
+}
+
+.main-menu .navigation > li > ul > li > a:hover {
+    background-color: #8fbbd9;
+    color: #fff;
+    padding-left: 20px;
+}
+
+/* Scroll */
+
+header.main-header.darkHeader .sticky-header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+header.main-header.darkHeader .sticky-header {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    -op-animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -op-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -op-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -op-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.sticky-header .logo {
+    padding: 12px 0px;
+}
+
+.main-header.darkHeader .main-menu {
+    padding-top: 0px;
+}
+
+.sticky-header .main-menu .navigation > li > a {
+    padding: 26px 15px !important;
+}
+
+.main-header .search-panel .form-container,
+ul.dropdown-menu.pull-right.search-panel .form-container {
+    padding: 25px 20px;
+}
+
+.main-header .search-panel .form-group,
+ul.dropdown-menu.pull-right.search-panel .form-group {
+    position: relative;
+    margin: 0px;
+}
+
+.form-container > input {
+    display: block;
+    width: 100%;
+    line-height: 24px;
+    padding: 9px 50px 9px 15px;
+    height: 44px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+.main-header .search-panel .search-btn {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 50px;
+    height: 42px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+    border: none;
+    background: unset;
+}
+
+.main-header .search-panel .search-btn {
+    color: #8fbbd9;
+}
+
+.form-container > form {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul.dropdown-menu.pull-right.search-panel {
+    position: absolute;
+    transform: translate3d(-184px, 41px, 0px);
+    top: 0px;
+    left: 0px;
+    box-shadow: none;
+    will-change: transform;
+}
+
+.form-container .form-group input {
+    margin: 0;
+    display: block;
+    width: 100%;
+    line-height: 24px;
+    padding: 9px 50px 11px 15px;
+    height: 44px !important;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    box-sizing: border-box !important;
+}
+.form-container .form-group input::placeholder {
+    color: #777 !important;
+}
+
+.dropdown.active .search-box-btn .fa-search:before {
+    content: "\f00d";
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+button#dropdownMenu3:focus,
+button.search-btn:focus {
+    outline: none;
+}
+
+.form-container ::placeholder {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+ul.links-nav.clearfix img {
+    width: 16.2px;
+    margin-right: 8px;
+    position: relative;
+    top: -2px;
+}
+
+.social-icon-three li a:hover {
+    background-color: #8fbbd9;
+}
+
+a.btn.btn-large.btn-primary.D {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.row-fluid.general_j {
+    width: 100% !important;
+}
+
+button.scroll-top.scroll-to-target {
+    background: #8fbbd9;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 99;
+    display: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    -webkit-animation: pulse 2s infinite;
+    -o-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    border: none;
+}
+
+.scroll-top span:before {
+    font-size: 27px;
+}
+
+span.fa.fa-angle-up {
+    font-weight: 800;
+    position: relative;
+    top: -2px;
+}
+
+.scroll-top:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 1;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+button.scroll-top.scroll-to-target:focus {
+    outline: none;
+}
+
+.footer-widget form {
+    position: relative;
+    margin: 0;
+}
+
+.main-footer .widgets-section:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("https://omvoajun.b-w-hosting.co.uk/wp-content/themes/bremond/images/resource/map.png") no-repeat left center;
+    left: 0;
+    bottom: 0;
+}
+
+div#bunch_newsletter-4 {
+    max-width: 24.9%;
+    background: #11141a;
+    padding-top: 0;
+}
+
+.alert.alert-info.hint {
+    background: #8fbbd9;
+    color: #fff;
+    border: none;
+}
+
+.alert.alert-success.hint a {
+    color: red;
+}
+.alert.alert-success.hint {
+    background: #8fbbd9;
+    color: #fff;
+}
+
+.p-5 {
+    padding: 0px !important;
+    margin-top: -10px !important;
+    margin-bottom: -11px !important;
+}
+      
+.bg-light {
+    background-color: white !important;
+}  
+
+.file-upload-wrap {
+    color: #8fbbd9 !important;
+    border-color: #8fbbd9 !important;
+}
+.file-upload-wrap:hover {
+    color: #fff;
+    background-color: #8fbbd9 !important;
+    border-color: #8fbbd9 !important;
+}
+  
+.btn-outline-primary:hover {
+    background: #8fbbd9 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none !important;
+}
+.btn-outline-primary {
+    background: #8fbbd9 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none !important;
+}
+.featurehover.general-clr {
+    background: #212733;
+}
+.featurehover.general-clr .highlight {
+    color: #fff !important;
+}
+.featurehover.general-clr div {
+    color: #fff !important;
+}
+.general_j .featurehover {
+    background: #212733;
+}
+.general_j .highlight {
+    color: #fff !important;
+}
+.general_j div {
+    color: #fff !important;
+}
+.row-fluid .main-des-part {
+    margin: 30px 0px !important;
+}
+.main-footer .social-icon-three li:before {
+    content: none !important;
+}
+.main-footer .footer-timesheet-link {
+    background: #8fbbd9;
+    padding: 5px;
+    border-bottom: 0px !important;
+    width: 145px;
+    padding-bottom: 10px;
+}
+.main-footer .footer-timesheet-link:before {
+    content: none !important;
+}
+.footer-timesheet-link:hover a {
+    color: #fff !important;
+}
+.footer-timesheet-link a {
+    color: #000 !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+}
+
+.top-left.pull-left {
+    display: none;
+}
+
+button.scroll-top.scroll-to-target {
+    display: none !important;
+}
+.main-footer #mc-embedded-subscribe-form .mc-field-group {
+    padding: 7px;
+    clear: left;
+    position: relative;
+    width: 96%;
+    padding-bottom: 3%;
+    min-height: 50px;
+}
+.main-footer #mc-embedded-subscribe-form input[type="submit"] {
+    clear: both;
+    background-color: #aaa;
+    border: 0 none;
+    border-radius: 4px;
+    transition: all 0.23s ease-in-out 0s;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    height: 32px !important;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+    margin-top: 15px !important;
+    margin-bottom: 30px !important;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    position: relative;
+}
+.main-footer #mc-embedded-subscribe-form input[type="submit"]:hover {
+    color: #fff;
+}
+.main-footer #bunch_newsletter-4 .widget-title {
+    margin-bottom: 25px;
+    padding: 20px;
+    font-weight: 600;
+}
+.main-footer #mc_embed_signup_scroll label {
+    margin-bottom: 0.5rem;
+}
+.main-footer .menu li a:hover {
+    color: #8fbbd9;
+}
+footer #custom_html-5 h2 {
+    margin-bottom: 25px;
+    padding: 20px;
+    font-weight: 600;
+}
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 3%;
+}
+footer #custom_html-5,
+.oblog-form form {
+    background: #11141a;
+}
+#mc_embed_signup .indicates-required {
+    text-align: right;
+    font-size: 11px;
+    margin-right: 4%;
+}
+#mc_embed_signup .asterisk {
+    color: #e85c41;
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+    top: 5px;
+}
+.oblog-form form .mc-field-group {
+    padding: 7px;
+}
+#mc_embed_signup .mc-field-group {
+    clear: left;
+    position: relative;
+    width: 96%;
+    padding-bottom: 3%;
+    min-height: 50px;
+}
+#mc_embed_signup .mc-field-group label {
+    display: block;
+    margin-bottom: 3px;
+    line-height: 1.2;
+}
+.footer-widget form input {
+    height: 40px !important;
+    margin: 0;
+}
+.oblog-form form .mc-field-group input {
+    background: #292c31;
+    color: #fff;
+}
+#mc_embed_signup input {
+    border: 1px solid #abb0b2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+}
+.main-footer .menu li a:before {
+    content: "\f105";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    line-height: 15px;
+    font-size: 16px;
+    font-family: "FontAwesome";
+}
+#mc_embed_signup .button:hover {
+    background-color: #777 !important;
+}
+.sticky-header .main-menu .navigation > li.dropdown:before {
+    margin-top: -13px !important;
+}
+.header-upper .main-menu .navigation {
+    left: 1px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+
+
+.dropdown-menu.pull-right.search-panel.for-mobile.active {
+    display: none;
+}
+.dropdown-menu.pull-right.search-panel.for-desktop.active {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .main-footer .container,
+    .main-header .container,
+    .container {
+        max-width: 540px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container.main-cntr {
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .main-footer .container,
+    .main-header .container,
+    .container {
+        max-width: 720px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-footer .container,
+    .main-header .container,
+    .container {
+        max-width: 960px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container.main-cntr {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-footer .container,
+    .main-header .container,
+    .container {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container.main-cntr {
+        max-width: 1170px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    ul.dropdown-menu.pull-right.search-panel {
+        transform: translate3d(0px, -98px, 0px) !important;
+        left: 0 !important;
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .dropdown-menu.pull-right.search-panel.for-mobile.active {
+        display: block;
+    }
+    .dropdown-menu.pull-right.search-panel.for-desktop.active {
+        display: none;
+    }
+
+    ul.dropdown-menu.pull-right.search-panel {
+        transform: none !important;
+        left: unset !important;
+        margin-top: 117px;
+        right: 6px;
+    }
+    .main-footer .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .main-footer .menu li:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .header-upper .main-menu .navbar-collapse.collapse {
+        display: none;
+        overflow: auto;
+        float: none;
+        width: 100%;
+        padding: 0;
+        border: none;
+        margin: 0;
+        border-radius: 3px;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        transition: none !important;
+    }
+    .main-header .float-left.logo-outer {
+        text-align: center;
+        width: 100%;
+        padding: 20px 0 0 !important;
+    }
+    .main-header .float-right.upper-right {
+        position: relative;
+        width: 100%;
+        padding-top: 0;
+    }
+    .main-header .navbar-expand-lg {
+        -webkit-box-orient: inherit !important;
+        -webkit-box-direction: inherit !important;
+        -ms-flex-flow: row nowrap !important;
+        flex-flow: inherit !important;
+        -webkit-box-pack: inherit !important;
+        -ms-flex-pack: inherit !important;
+        justify-content: inherit !important;
+        width: 100% !important;
+        display: block !important;
+    }
+    .main-header .navbar-expand-lg .navbar-header {
+        position: relative;
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        top: 0;
+        z-index: 12;
+    }
+    .main-header .navbar-expand-lg .navbar-header .navbar-toggle {
+        display: inline-block;
+        z-index: 7;
+        float: none;
+        padding: 4px 5px;
+        cursor: pointer;
+        margin: 10px 0;
+        border-radius: 0;
+        background: #fff;
+        border: 0;
+    }
+    .main-header .navbar-expand-lg .navbar-header .navbar-toggle span.icon-bar {
+        background: #e6202d;
+        height: 2px;
+        width: 29px;
+        display: block;
+        margin: 7px 5px;
+        background-color: #8fbbd9;
+    }
+    .main-header .outer-box {
+        position: absolute;
+        right: 0;
+        top: 4px;
+        margin: 0;
+        margin-left: 15px;
+    }
+    .sticky-header {
+        display: none !important;
+    }
+    .main-menu .navbar-collapse > .navigation {
+        float: none !important;
+        margin: 0 !important;
+        width: 100% !important;
+        border-top: none;
+    }
+    .main-menu .navbar-collapse > .navigation > li {
+        margin: 0 !important;
+        float: none !important;
+        width: 100%;
+    }
+    .main-menu .navbar-collapse > .navigation > li,
+    .main-menu .navbar-collapse > .navigation > li > ul > li,
+    .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
+        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+        opacity: 1 !important;
+        top: 0 !important;
+        padding-top: 0;
+        padding-bottom: 0;
+        left: 0 !important;
+        visibility: visible !important;
+        padding-left: 0 !important;
+        border-color: #f1f1f1 !important;
+    }
+    .main-menu .navbar-collapse > .navigation > li > a,
+    .main-menu .navbar-collapse > .navigation > li > ul > li > a,
+    .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
+        padding: 11px 25px !important;
+        line-height: 22px;
+        color: #fff;
+        text-align: left;
+        min-height: 0px;
+    }
+    .main-menu .navbar-collapse > .navigation > li > a {
+        padding-left: 0 !important;
+    }
+    .main-header .header-upper.dark-color .main-menu .navbar-collapse > .navigation > li > a,
+    .main-header .header-upper.dark-color .main-menu .navbar-collapse > .navigation > li > ul > li > a,
+    .main-header .header-upper.dark-color .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
+        color: #222 !important;
+    }
+    .main-menu .navbar-collapse > ul li.dropdown .dropdown-btn {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 50px;
+        height: 43px;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        font-size: 16px;
+        line-height: 43px;
+        cursor: pointer;
+        z-index: 5;
+        display: block;
+        color: #222;
+        border-color: #f1f1f1;
+    }
+    .main-menu .navbar-collapse > .navigation > li > ul,
+    .main-menu .navbar-collapse > .navigation > li > ul > li > ul {
+        position: relative;
+        border: none;
+        float: none;
+        visibility: visible;
+        opacity: 1;
+        display: none;
+        margin: 0;
+        padding: 0;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 0;
+        transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
+        -moz-transition: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .main-menu .navigation > li.dropdown:before {
+        content: none !important;
+    }
+    .main-header .search-box-btn {
+        z-index: 99;
+    }
+    .main-menu .navigation.clearfix .menu-item-has-children .submenu {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .main-header .navbar-expand-lg .navbar-header .navbar-toggle:focus {
+        border: none !important;
+        outline: none !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    ul.dropdown-menu.pull-right.search-panel {
+        margin-top: 42px;
+    }
+    .header-top .top-left,
+    .header-top .top-right {
+        width: 100% !important;
+        text-align: center !important;
+        display: block !important;
+    }
+    .header-top .links-nav {
+        padding: 20px 0 !important;
+    }
+    .header-top .social-links a {
+        border-top: 1px solid #d0d1d6;
+    }
+    .header-upper .float-left.logo-outer {
+        position: absolute !important;
+        padding: 10px 0 0 !important;
+        width: 215px;
+        margin: auto;
+        z-index: 9999 !important;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-footer .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main-footer .container,
+    .main-header .container,
+    .container {
+        max-width: 100% !important;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.btn {
+    cursor: pointer;
+}
+
+/*New CSS*/
+@media screen and (max-width: 575.98px) and (min-width: 320px) {
+    ul.dropdown-menu.pull-right.search-panel {
+        transform: translate3d(-258px, 41px, 0px) !important;
+    }
+}
+
+/*New CSS Footer*/
+body .main-footer .oblog-form form .indicates-required {
+    font-size: 13px !important;
+    text-align: left !important;
+    margin-right: 0 !important;
+    line-height: 14.67px !important;
+}
+
+.main-footer #mc-embedded-subscribe-form input#mc-embedded-subscribe {
+    padding: 10px;
+    height: 50px !important;
+    background: #8fbbd9;
+    border: 0 !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+    font-size: 17px;
+    width: 94%;
+    margin-top: 15px !important;
+    margin-bottom: 30px !important;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    color: #000;
+    border-radius: 0;
+    line-height: normal;
+}
+
+.main-footer #mc_embed_signup form {
+    padding: 0 !important;
+}
+
+.main-footer #mc_embed_signup .mc-field-group label {
+    margin-bottom: 8px !important;
+}
+
+.main-footer #mc_embed_signup .mc-field-group input {
+    border-radius: 0;
+}
+
+.main-footer #mc-embedded-subscribe-form input#mc-embedded-subscribe:hover {
+    background: #8fbbd9 !important;
+    color: #fff;
+}
+
+.main-footer #mc_embed_signup .mc-field-group label {
+    line-height: 16.67px;
+}
+
+.main-footer #mc-embedded-subscribe-form .mc-field-group {
+    padding-bottom: 7px !important;
+    width: 100%;
+}
+
+.main-footer #mc_embed_signup .asterisk {
+    font-size: 13px;
+    color: #fff;
+    top: 0;
+}
+
+.main-footer #mc_embed_signup .mc-field-group input {
+    border-color: #fff;
+}
+    
+    
+    
+/*Header Footer End*/
+/*Start Onboarding*/
+.overlay-fix {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: none;
+}
+
+.col-md-6.imagesource {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-and-exit {
+    text-align: right;
+    position: relative;
+    top: 35px;
+}
+.save-exit-button {
+    color: #3498db;
+}
+.save-exit-button:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.save-exit-button:hover {
+    color: #3498db;
+}
+.percentage-two {
+    text-align: right;
+    position: relative;
+    top: 15px;
+    margin-top: 20px;
+}
+.percentage-two span {
+    margin-left: 10px;
+    background: #fff;
+    padding: 5px 10px;
+    color: green;
+    border-radius: 5px;
+}
+.percentage-two .percent-sub-div {
+    display: inline-block;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.embed-responsive.embed-responsive-4by3.is-active:before {
+    padding-top: 115px;
+}
+
+.thankyou-page .remove-part {
+    display: none;
+}
+.thankyou-page #expiredate {
+    display: none;
+}
+.welcome-not-available.remove-element,
+.welcome-available.remove-element {
+    display: none !important;
+}
+
+.welcome-not-available p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .thankyou-page .mt-5 .col-md-6,
+    .thankyou-page .last-form .col-md-6 {
+        flex: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.percentage {
+    display: none;
+}
+
+.main_container {
+    min-height: calc(100vh - 200px);
+}
+/*Progressbar*/
+
+.progress-bar {
+    -ms-flex-direction: unset;
+    flex-direction: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    overflow: unset;
+    color: unset;
+    text-align: unset;
+    white-space: unset;
+    background-color: unset;
+    transition: unset;
+    margin-bottom: 50px;
+}
+
+.progress-bar {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav.nav-tabs.step-anchor.pro-ul {
+    border: none;
+}
+
+.progress-bar .pro-ul .pro-li {
+    float: left;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.nav.nav-tabs.step-anchor.pro-ul button {
+    border: none;
+}
+
+.progress-bar .pro-ul .pro-li .pro-li-a {
+    position: relative !important;
+    display: block;
+    float: left;
+    border-radius: 0;
+    outline-style: none;
+    background: #ddd;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    transition: none !important;
+    -webkit-transition: none !important;
+    text-transform: capitalize !important;
+}
+
+.progress-bar .pro-ul .pro-li .pro-li-a {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 42px;
+}
+
+.active .pro-li-a {
+    background: #3498db !important;
+}
+
+.save .pro-li-a {
+    background: #2ecc71 !important;
+}
+
+.unticket a:after {
+    box-shadow: 0 0 0 2px #ddd;
+    content: "";
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -4px;
+    left: -3.5px;
+}
+
+.active .pro-li-a:after {
+    box-shadow: 0 0 0 2px #3498db !important;
+    content: "";
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -4px;
+    left: -3.5px;
+}
+
+.save .pro-li-a:after {
+    box-shadow: 0 0 0 2px #2ecc71 !important;
+    display: block;
+    content: "";
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -3px;
+    left: -3.5px;
+}
+
+.progress-bar .pro-ul .pro-li .pro-li-a:before {
+    content: " ";
+    display: block;
+    height: 2.5px;
+    width: 53px;
+    background: #ddd;
+    position: absolute !important;
+    left: 121%;
+}
+
+.progress-bar .pro-ul .pro-li .pro-li-a:before {
+    top: 10px;
+}
+
+.save .pro-li-a::before {
+    background: #2ecc71 !important;
+}
+
+.pro-li.save:before,
+.pro-li.is-active:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 13px;
+    left: 23px;
+    color: #fff;
+    z-index: 9;
+    font-size: 14px;
+}
+.pro-li.active:before {
+    content: none !important;
+}
+.pro-li.is-active:before {
+    content: "\f00c" !important;
+}
+
+button.mob-li.save::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 12px !important;
+    left: 13px !important;
+    font-size: 10px;
+    z-index: 1;
+    color: #fff;
+}
+button.mob-li.active::before {
+    content: none !important;
+}
+button.mob-li.is-active:before {
+    content: "\f00c" !important;
+}
+button#btn8 .pro-li-a:before {
+    display: none;
+}
+
+button#btn8 a {
+    margin-right: 0;
+}
+
+.progress-bar:focus,
+.nav.nav-tabs.step-anchor.pro-ul,
+.nav.nav-tabs.step-anchor.pro-ul button {
+    outline: none;
+}
+
+.progress-bar *,
+.nav.nav-tabs.step-anchor.pro-ul button {
+    cursor: default;
+}
+.new-welcome-uri {
+    background: #8fbbd9 !important;
+    background-color: #8fbbd9 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.thankyou-page {
+    padding-top: 10% !important;
+}
+
+/*Internet Explorer Error*/
+.progress-bar.internetexplorer {
+    -ms-flex-direction: unset !important;
+    flex-direction: unset !important;
+    -ms-flex-pack: unset !important;
+    justify-content: unset !important;
+    overflow: unset !important;
+    color: unset !important;
+    white-space: normal !important;
+    background-color: transparent !important;
+    transition: unset !important;
+}
+/*Internet Explorer Error End*/
+
+/*Mobile Progressbar*/
+
+@media screen and (min-width: 991px) {
+    .progress-bar .pro-ul .pro-li {
+        padding: 10px 0px 27px 17px !important;
+    }
+    .newheader {
+        margin-bottom: 100px;
+    }
+    .newheader.remove-margin {
+        margin-bottom: 0 !important;
+    }
+
+    button#btn1:after {
+        content: "Assignment Confirmation";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: -25px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    button#btn2:after {
+        content: "Contractor Agreement";
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        left: -7px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    button#btn3:after {
+        content: "Payment Form";
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        left: -1px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    button#btn4:after {
+        content: "Company Insurances";
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        left: 1px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    button#btn5:after {
+        content: "Tax";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: -21px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    button#btn6:after {
+        content: "Superannuation";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: -18px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    button#btn7:after {
+        content: "Client Specific Documents";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: -18px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    button#btn8:after {
+        content: "Assignment Variation";
+        position: absolute;
+        bottom: 0;
+        width: 125%;
+        left: 5px;
+        top: 56px;
+        text-align: center;
+        color: grey;
+    }
+
+    .progress-bar .pro-ul .pro-li:after {
+        font-size: 11.5px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .progress-bar {
+        display: none;
+    }
+
+    .main_container {
+        padding-top: 180px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .thankyou-page .col-md-6 span.lead.ml-3 {
+        margin-left: 0px !important;
+        font-size: 14px !important;
+    }
+    .thankyou-page .col-md-6 .btn.btn-secondary.float-right {
+        float: none !important;
+        width: 49%;
+        padding: 5px;
+        margin-top: 10px;
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {
+    .score-header .header-right .header-right-1 img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .progress-bar {
+        display: none;
+    }
+
+    .main_container {
+        padding-top: 180px;
+    }
+
+    button#mbn1 {
+    }
+
+    button#mbn1 span.same-none-click {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    button#mbn1 {
+        margin-bottom: 0 !important;
+    }
+
+    .part-1 h3.Assignment-Confirmation-head,
+    .part-2 h3.Contractor-Agreement-head,
+    .part-3 h3.Payment-head,
+    .part-4 h3.Insurances-head,
+    .part-5 h3.Tax-head,
+    .part-6 h3.Superannuation-head,
+    .part-4 h4.Workers-Compensation-Insurance,
+    .part-4 h4.Public-Indemnity-Insurance,
+    .part-4 h4.Public-Liability-Insurance,
+    .part-7 h3.Client-Specific-Documents,
+    h3.Assignment-Variation-title {
+        font-size: 20px !important;
+    }
+
+    .form-field-label {
+        font-size: 20px !important;
+    }
+
+    .part-1 p.Assignment-p,
+    .part-2 p.Contractor-p,
+    .part-3 p.Contractor-p,
+    .part-3 p.emergency-p,
+    .part-4 p.Insurances-p,
+    .part-5 p.Tax-p,
+    .part-6 p.Superannuation-p,
+    .part-6 p.Client-Specific-p,
+    p.Assignment-Variation-p {
+        font-size: 16px !important;
+        line-height: normal;
+    }
+
+    .form-field-group-instruction {
+        font-size: 16px !important;
+        line-height: normal;
+    }
+
+    .part-3 h3.personal-title,
+    .part-3 h3.emergency-contact-title,
+    .part-3 h3.bank-detail-title {
+        font-size: 18px !important;
+    }
+
+    .form-field-group-label {
+        font-size: 18px !important;
+    }
+
+    .loadingplz {
+        font-size: 30px !important;
+        margin: 10px 0 15px 0;
+        line-height: normal;
+    }
+
+    .btn-save-con {
+        max-width: 125px;
+    }
+
+    .allpart button:focus {
+        outline: none;
+    }
+
+    .Contact-Float .field:nth-child(1),
+    .Contact-Float .field:nth-child(2) {
+        width: 100% !important;
+        float: unset !important;
+    }
+
+    button#mbn8 a:before {
+        display: none;
+    }
+
+    .part-1 button .mobile-li-a:before {
+        height: 33px;
+    }
+
+    .part-1.active button#mbn1 a:before {
+        height: 254px;
+    }
+
+    .part-2.active button#mbn2 a:before {
+        height: 234px;
+    }
+
+    .part-3.active button#mbn3 a:before {
+        height: 1634px;
+    }
+
+    .part-4.active button#mbn4 a:before {
+        height: 734px;
+    }
+
+    .part-5.active button#mbn5 a:before {
+        height: 274px;
+    }
+
+    .part-6.active button#mbn6 a:before {
+        height: 274px;
+    }
+
+    .part-7.active button#mbn7 a:before {
+        height: 274px;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 320px) {
+    #myModalexit2 .modal-content {
+        width: 90% !important;
+    }
+
+    #myModalexit2 .cnclexit2,
+    a#submitExpressApplicationsForm {
+        width: 35% !important;
+    }
+}
+
+div#myModalexit2.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 384px) and (min-width: 320px) {
+    .field.Personal.First.Name.p_first_name.requiredfixed input::placeholder,
+    .field.Personal.Last.Name.p_last_name.requiredfixed input::placeholder,
+    .part-3 select#country-formfield,
+    .field.Personal.State.p_state.requiredfixed select,
+    .part-3 .Contact-Float-2 .field.Address:nth-child(1) input::placeholder,
+    .part-3 .Contact-Float-2 .field.Address:nth-child(2) input::placeholder,
+    .part-3 .City input::placeholder,
+    .part-3 .State input::placeholder,
+    .part-3 .Postcode input::placeholder,
+    .part-3 .Country input::placeholder,
+    .part-3 .Mobile.Number input::placeholder,
+    .part-3 .Home.Number input::placeholder,
+    .part-3 .Email.Address input::placeholder,
+    .part-3 .Date.of.Birth input::placeholder,
+    .field.Name.of.Emergency.Contact.e_contact.requiredfixed input::placeholder,
+    .field.Emergency.Contact.Phone.Number input::placeholder,
+    .part-3 .field.Emergency.Contact.Email.Address input::placeholder,
+    .field.Company.Name.c_name.requiredfixed input::placeholder,
+    .part-3 .field.Bank.Account.Name.requiredfixed.b_bank_name input::placeholder,
+    .part-3 .field.Bank.Name.requiredfixed.b_account_name input::placeholder,
+    .part-3 .field.Bank.BSB.Number input::placeholder,
+    .part-3 .field.Bank.Account.Number input::placeholder {
+        font-size: 14px;
+    }
+}
+
+.btn-save-con,
+.btn-save-con:hover,
+.btn-save-con:active,
+.btn-save-con:focus {
+    height: 40px;
+    background: #8fbbd9 !important;
+    background-color: #8fbbd9 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 25px;
+    width: 190px;
+    color: #fff !important;
+    float: right;
+    padding-top: 8px;
+    font-weight: normal !important;
+}
+
+.btn-back,
+.btn-back:hover,
+.btn-back:active,
+.btn-back:focus {
+    background-color: #22272d !important;
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+    color: #fff !important;
+    padding: 8px 8px;
+    border-radius: 25px;
+    width: 80px;
+    font-weight: normal !important;
+}
+
+button.prev-1 {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    padding: 8px 8px;
+    border-radius: 25px;
+    width: 80px;
+}
+
+.part-main {
+    display: none;
+}
+
+.part-main.active {
+    display: block !important;
+}
+
+.Contact-Float:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.Contact-Float .field:nth-child(1) {
+    width: 49%;
+    float: left;
+}
+
+.Contact-Float .field:nth-child(2) {
+    width: 49%;
+    float: right;
+}
+
+.part-3 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.part-3 .Contact-Float input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    border-top-color: #c0c0c0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    line-height: 24px;
+    margin-bottom: 16px;
+    min-height: 30px;
+}
+
+.part-3 .field.Name.of.Emergency.Contact.e_contact input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    border-top-color: #c0c0c0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    line-height: 24px;
+    margin-bottom: 16px;
+    min-height: 30px;
+}
+
+.part-3 .Contact-Float select {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.part-4 .field.Company.Name.c_name.requiredfixed input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    border-top-color: #c0c0c0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    line-height: 24px;
+    margin-bottom: 10px;
+    min-height: 30px;
+}
+
+.part-4 h4.Workers-Compensation-Insurance,
+.part-4 h4.Public-Indemnity-Insurance,
+.part-4 h4.Public-Liability-Insurance {
+    font-size: 18px;
+    line-height: normal;
+}
+
+.form-field-label {
+    font-size: 18px;
+    line-height: normal;
+}
+
+.upload-doc1 h3,
+.upload-doc2 h3,
+.upload-doc3 h3,
+.upload-doc4 h3,
+.upload-doc5 h3 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+
+.part-4 .upload-doc1 h3:before {
+    content: "*";
+    color: red;
+    position: relative;
+    left: -1px;
+}
+
+.upload-doc1 .classaddmeans {
+    position: relative;
+    top: 6px;
+    left: 14px;
+
+    font-size: 0.875rem;
+}
+
+.part-4 .upload-doc1 button.upload-button {
+    margin-top: 15px;
+}
+
+input#hiddenname {
+    display: none !important;
+}
+
+input.show-val_w1,
+input.show-val_w2,
+input.show-val_w3,
+input.show-val_w4,
+input.show-val_w5 {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    display: block;
+    padding: 8px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.rmv-btn-remove {
+    display: none;
+}
+
+.part-4 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.rmv-btn-remove.is-active {
+    display: block !important;
+}
+
+#myModalexit2 .modal-content {
+    width: 40%;
+    margin: auto;
+    top: 20%;
+}
+
+#myModalexit2 .exitclose2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+div#myModalexit2 h4,
+div#myModalexit3 h4 {
+    font-weight: normal;
+}
+
+h4.twospi {
+    margin-bottom: 0;
+}
+
+.exit2space {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+#myModalexit2 .modal-content {
+    width: 40%;
+    margin: auto;
+    top: 20%;
+    padding: 20px;
+}
+
+#myModalexit2 .exitclose2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: -18px;
+}
+
+#myModalexit2 .cnclexit2 {
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    border: none;
+    margin-right: 4% !important;
+    cursor: pointer;
+}
+
+#myModalexit2 .confirm-exit-btn {
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    cursor: pointer;
+}
+
+#myModalexit2.active {
+    display: block !important;
+}
+
+a#submitExpressApplicationsForm:hover {
+    text-decoration: none;
+}
+
+.thankyou-page {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.thankyoubg {
+    background: #f5f5f5 !important;
+}
+.thankyou-page .col-10 {
+    margin: auto;
+}
+
+.thankyou-page .success-msg {
+    width: 60%;
+    margin: 0 auto;
+    background: #ddd;
+    border: none;
+    padding: 25px;
+    text-shadow: none;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.thankyou-page .stwo.ssames,
+.thankyou-page .sthree.ssames,
+.thankyou-page .sfour {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    .thankyou-page .col-10 {
+        width: 700px;
+    }
+    .thankyou-page .success-msg {
+        width: 100%;
+    }
+    
+    .home-video {
+    margin-bottom: 150px;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .img-welcome.float-right {
+        float: none !important;
+        width: 70%;
+    }
+}
+
+.part-main .mob-li {
+    display: none;
+}
+
+@media screen and (max-width: 991.98px) {
+    .save-and-exit {
+        margin-bottom: 70px;
+    }
+    .part-main .mob-li {
+        display: block !important;
+        float: none !important;
+        width: 100%;
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 12px 0px 27px 10px !important;
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        margin-left: -35px;
+    }
+
+    .progress-bar {
+        display: none;
+    }
+
+    .mob-li a {
+        width: 15px;
+        height: 15px;
+        padding-top: 0 !important;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 75px;
+        position: relative;
+        padding: 0 !important;
+        float: none !important;
+        background: #ddd;
+    }
+    .same-none-click {
+        display: block !important;
+        position: absolute;
+        left: 38px;
+        top: 8px;
+        font-weight: normal;
+    }
+    .mob-li a:before {
+        width: 2px;
+        height: 41px;
+        top: 17px;
+        left: 6px;
+        content: " ";
+        display: block;
+        background: #ddd;
+        position: absolute;
+    }
+    .mob-li a:after {
+        width: 20px;
+        height: 20px;
+        left: -2.6px;
+        top: -2.6px;
+        box-shadow: 0 0 0 2px #ddd;
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .part-main {
+        padding: 15px;
+    }
+    .part-1 .mob-li.mobile-save1 a {
+        background: #3498db !important;
+    }
+
+    .save .mobile-li-a::before {
+        background: #2ecc71 !important;
+    }
+
+    .save a:after {
+        box-shadow: 0 0 0 2px #2ecc71 !important;
+    }
+
+    .save .mobile-li-a::before {
+        background: #2ecc71 !important;
+    }
+    .save .mobile-li-a {
+        background: #2ecc71 !important;
+    }
+    .part-2 .mob-li.mobile-save2 a {
+        background: #3498db !important;
+    }
+    .part-2 .mob-li.mobile-save2 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+    .part-3 .mob-li.mobile-save3 a {
+        background: #3498db !important;
+    }
+    .part-3 .mob-li.mobile-save3 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+    .part-4 .mob-li.mobile-save4 a {
+        background: #3498db !important;
+    }
+    .part-4 .mob-li.mobile-save4 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+    .part-4 .mob-li.mobile-save4 a {
+        background: #3498db !important;
+    }
+    .part-4 .mob-li.mobile-save4 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+    .part-5 .mob-li.mobile-save5 a {
+        background: #3498db !important;
+    }
+    .part-5 .mob-li.mobile-save5 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+    .part-6 .mob-li.mobile-save6 a {
+        background: #3498db !important;
+    }
+    .part-6 .mob-li.mobile-save6 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+    .part-7 .mob-li.mobile-save7 a {
+        background: #3498db !important;
+    }
+    .part-7 .mob-li.mobile-save7 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+    .part-8 .mob-li.mobile-save8 a {
+        background: #3498db !important;
+    }
+    .part-8 .mob-li.mobile-save8 a:after {
+        box-shadow: 0 0 0 2px #3498db !important;
+    }
+}
+
+.btn-save-con:focus,
+.prev-1:focus,
+input.show-val_w1:focus,
+input.show-val_w2:focus,
+input.show-val_w3:focus,
+input.show-val_w4:focus,
+input.show-val_w5:focus,
+.rmv-btn-remove:focus {
+    outline: none;
+}
+
+.part-1 h3.Assignment-Confirmation-head,
+.part-2 h3.Contractor-Agreement-head,
+.part-3 h3.Payment-head,
+.part-4 h3.Insurances-head,
+.part-5 h3.Tax-head,
+.part-6 h3.Superannuation-head,
+.part-7 h3.Client-Specific-Documents,
+h3.Assignment-Variation-title {
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.part-3 h3.personal-title,
+.part-3 h3.emergency-contact-title,
+.part-3 h3.bank-detail-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form-field-group-label {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.loadingplz {
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.part-1 p.Assignment-p,
+.part-2 p.Contractor-p,
+.part-3 p.Contractor-p,
+.part-3 p.emergency-p,
+.part-4 p.Insurances-p,
+.part-5 p.Tax-p,
+.part-6 p.Superannuation-p,
+.part-7 p.Client-Specific-p,
+p.Assignment-Variation-p,
+p.bank-detail-p {
+    font-size: 18px;
+}
+
+.form-field-group-instruction {
+    font-size: 18px;
+}
+
+.part-4 h4.Workers-Compensation-Insurance,
+.part-4 h4.Public-Indemnity-Insurance,
+.part-4 h4.Public-Liability-Insurance {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.form-field-label {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.section-6:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section-6 {
+    margin-bottom: 20px;
+}
+
+.input-block-level {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #d9d9d9;
+    border-top-color: #c0c0c0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    padding: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    height: auto !important;
+    display: block;
+    width: 100%;
+    min-height: 30px;
+}
+
+.part-3 .field.Personal.Date.of.Birth input {
+    padding: 7px 8px;
+    color: #6c757d;
+}
+
+form#fileform1,
+form#fileform2,
+form#fileform3,
+form#fileform4,
+form#fileform5 {
+    margin-bottom: 0;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+h4#myModalLabel {
+    display: block;
+    text-align: left;
+}
+
+div#myModal1 {
+    overflow: unset;
+}
+
+h4#myModalLabel {
+    font-weight: 600;
+    font-size: 17.5px;
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+#fileform1 .modal-footer,
+#fileform2 .modal-footer,
+#fileform3 .modal-footer,
+#fileform4 .modal-footer,
+#fileform5 .modal-footer {
+    margin-top: 20px;
+}
+
+form#fileform1 input#filedata,
+form#fileform2 input#filedata,
+form#fileform3 input#filedata,
+form#fileform4 input#filedata,
+form#fileform5 input#filedata {
+    text-align: center;
+    width: 100%;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    padding: 10px;
+    margin: 0 !important;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+input.input-block-level:focus {
+    border-color: #ffb612;
+    outline: none;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+button.upload-button {
+    outline: none;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.rmv-btn-remove.is-active {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: transparent;
+}
+
+.rmv-btn-remove.is-active:after {
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: -34px;
+    color: #000;
+}
+
+#myModalexit2 .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    display: block;
+    text-align: center;
+}
+
+#myModalexit2 .exitclose2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#myModalexit2 .cnclexit2 {
+    color: #fff;
+}
+
+div#myModalexit2 h4,
+div#myModalexit3 h4 {
+    font-weight: normal;
+}
+
+h4.twospi {
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+.exit2space {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+div#myModalexit2 .cnclexit2 {
+    margin-right: 4%;
+}
+
+div#myModalexit2 .cnclexit2 {
+    background: #3498db;
+    padding: 7px;
+}
+
+a.btn.btn-default.cancel-exit-btn {
+    font-size: 18px;
+}
+
+.btn.btn-default.cancel-exit-btn {
+    font-weight: normal;
+    text-shadow: none;
+}
+
+a#submitExpressApplicationsForm {
+    font-size: 18px;
+    padding: 10px;
+    top: 3px;
+    background: #fdaa28;
+    font-weight: normal;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    position: relative;
+}
+
+.field.Personal.State.p_state.requiredfixed:before,
+.field.Personal.Country.p_country.requiredfixed:before {
+    content: "*";
+    position: absolute;
+    color: #6c757d;
+    left: 8px;
+    top: 11px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.field.Personal.State.p_state.requiredfixed,
+.field.Personal.Country.p_country.requiredfixed {
+    position: relative;
+}
+
+.field.Personal.State.p_state.requiredfixed select,
+.field.Personal.Country.p_country.requiredfixed select {
+    padding-left: 20px;
+    color: #6c757d;
+}
+
+@media screen and (max-width: 4096px) and (min-width: 991px) {
+    div#myModalexit2 .modal-content {
+        width: 60% !important;
+        max-width: 600px;
+    }
+
+    h4.twospi {
+        margin-bottom: 0;
+    }
+}
+
+.loadingplz {
+    display: none;
+}
+
+/*Form remove*/
+.fivepagein,
+.fivepageinTwo,
+.fivepageinFive,
+.fivepageinSix,
+div#esignDivSeven,
+.fivepageinEight {
+    display: none;
+}
+
+iframe.widthfl {
+    width: 100%;
+    height: 650px;
+    margin-bottom: 20px;
+}
+
+.job-error {
+    background: #f2dede;
+    padding: 10px;
+    color: #cd908f;
+    font-size: 13px;
+    display: none;
+}
+
+.part-3 .job-error {
+    position: relative;
+    top: -12px;
+}
+
+.part-4 .upload-doc1.requiredfixed .job-error {
+    position: relative;
+    top: -28px;
+}
+
+.job-error.active {
+    display: block;
+}
+
+@media screen and (max-width: 481px) {
+    .btn-back {
+        float: left;
+        position: relative;
+        top: 85px;
+    }
+    .btn-save-con {
+        top: -25px !important;
+        position: relative;
+        display: grid;
+        width: 100% !important;
+        max-width: 100%;
+        float: none !important;
+        margin-top: 40px !important;
+    }
+    .skip-button {
+        margin-bottom: 50px;
+        top: 3px;
+    }
+    .btn-prev.top-up {
+        top: 4px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .embed-responsive.embed-responsive-4by3.is-active:before {
+        padding-top: 150px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .same-none-click {
+        font-size: 13px;
+    }
+    .skip-button {
+        display: block;
+        float: none !important;
+        margin-top: 17px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .embed-responsive-4by3::before {
+        padding-top: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Header Start */
+
+/* Header End */
+
+/* Footer */
+.home-video iframe {
+    width: 70%;
+    height: 250px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 20px auto;
+}
+/* Footer End*/
+
+/*Changes CSS*/
+.sametomix {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-family: Helvetica Neue, Arial;
+}
+
+h1.heading-welcome-page {
+    font-family: Helvetica Neue, Arial;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+form#applicationForm a {
+    color: #191d26;
+    font-weight: 600;
+}
+
+form#applicationForm button.btn.btn-outline-primary.btn-block.file-chooser.mt-3 {
+    border-color: #8fbbd9;
+    color: #8fbbd9;
+}
+
+form#applicationForm button.btn.btn-outline-primary.btn-block.file-chooser.mt-3:hover {
+    background: #8fbbd9;
+    color: #fff;
+}
+
+form#applicationForm .file-upload-wrap {
+    border-color: #191d26;
+    color: #191d26;
+}
+
+form#applicationForm .file-upload-wrap:hover {
+    background: #191d26;
+    border-color: #fff;
+}
+
+form#applicationForm .file-upload-wrap .drag-text > * {
+    color: #191d26;
+}
+
+form#applicationForm .file-upload-wrap:hover .drag-text > * {
+    color: #fff;
+}
+
+.btn:focus,
+.btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(30 65 100 / 25%);
+}
+
+button.btn.dropdown-toggle.btn-link.bs-placeholder {
+    box-shadow: 0 0 0 0.2rem rgb(30 65 100 / 25%);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgb(30 65 100 / 25%);
+    border-color: rgb(30 65 100 / 25%);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #191d26;
+}
+a.btn.btn-secondary.float-right {
+    background: #8FBBD9;
+    border: 1px solid #8FBBD9;
+}
+@media (max-width: 475px) {
+    .masthead #nav-body ul li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .same-none-click {
+        font-size: 12px;
+        text-align: left;
+    }
+    .skip-button {
+        display: block;
+        float: none !important;
+        margin-top: 17px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .embed-responsive-4by3::before {
+        padding-top: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 490.98px) {
+    div#nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    img.float-right.img-welcome {
+        width: 60%;
+        max-width: 40%;
+    }
+    
+    
+}
+    
+.container-fluid.text-center {
+    padding-bottom: 30vh;
+}   
+
+@media screen and (max-width: 768px) and (min-width: 490.98px) {
+    img.float-right.img-welcome {
+        width: 75%;
+    }
+}
+
+.allpart form .form-group .form-group.col-md-6 {
+    margin-bottom: 20px;
+}
+
+.space-between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+    .ratio.ratio-16x9.is-active {
+        --bs-aspect-ratio: 60%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .ratio.ratio-16x9.is-active {
+        --bs-aspect-ratio: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ratio.ratio-16x9.is-active {
+        --bs-aspect-ratio: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ratio.ratio-16x9.is-active {
+        --bs-aspect-ratio: 20%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ratio.ratio-16x9.is-active {
+        --bs-aspect-ratio: 20%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ratio.ratio-16x9.is-active {
+        --bs-aspect-ratio: 10%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .ratio.ratio-16x9.is-active {
+        --bs-aspect-ratio: 15%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .thankyou-page .col-10 {
+        width: 100%;
+    }
+
+    .part-main .mob-li {
+        margin-left: -25px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skip-button {
+        display: block;
+        float: right !important;
+        margin-top: 2px;
+    }
+}
+
+a.btn.btn-secondary.float-right:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(92 99 106 / 25%);
+}
+
+/*Every Time*/
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgb(30 65 100 / 25%);
+    border-color: rgb(30 65 100 / 25%);
+}
+
+button.btn.dropdown-toggle.btn-link.bs-placeholder {
+    box-shadow: 0 0 0 0.2rem rgb(30 65 100 / 25%);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #191d26;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #191d26;
+}
+
+.btn:focus,
+.btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(30 65 100 / 25%);
+}
+
+form#applicationForm .file-upload-wrap {
+    border-color: rgb(30, 65, 100);
+    color: rgb(30, 65, 100);
+}
+
+form#applicationForm .file-upload-wrap:hover {
+    background: rgb(30, 65, 100);
+    border-color: #fff;
+}
+
+form#applicationForm .file-upload-wrap .drag-text > * {
+    color: rgb(30, 65, 100);
+}
+.form-check-input:checked {
+    background-color: #191d26;
+    border-color: #22272d;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem #8d99a9;
+    border-color: #191d26;
+}
+    
+/*Query CSS*/
+.newheader .container.full {
+    width: 100%;
+    max-width: 100%;
+}
+
+.newheader .container:before, 
+.newheader .container:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+    
+.newfooter .container:before, 
+.newfooter .container:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.newheader .container:after {
+    clear: both;
+}
+
+.newheader header.desktop ul.nav {
+    flex-wrap: unset;
+}
+
+.newheader header.desktop .logo img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+    
+.newfooter .container {
+    max-width: 100%;
+}
+
+.newfooter li {
+    line-height: 20px;
+}
+    
+.overlay-menu ul {
+    display: block;
+}
+    
+/*Update UI*/   
+/*Update Welcome Page Desktop*/ 
+.applicationStepwelcomepage {
+    background: #eaeff6;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0 !important;
+}
+
+.applicationStepwelcomepage .landingpage img {
+    position: absolute;
+    top: 0;
+    height: unset;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.applicationStepwelcomepage .row {
+    align-items: center;
+}
+
+.applicationStepwelcomepage .landingpage {
+    height: 500px;
+    overflow: hidden;
+}
+
+.applicationStepwelcomepage .row-1 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.applicationStepwelcomepage .align-center-1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.applicationStepwelcomepage .welcome-available h1 {
+    font-weight: bold;
+    color: #000;
+}
+
+.applicationStepwelcomepage .new-welcome-uri {
+    background: #2b80ae !important;
+    background-color: #2b80ae !important;
+}
+    
+.applicationStepwelcomepage .align-center-1 {
+    text-align: left;
+}
+    
+.main_container.menu-flex{
+    display: flex;
+    align-items: center;
+    background: #eaeff6;
+}   
+/*Update Welcome Page Desktop*/ 
+    
+/*Thankyou Page*/   
+.main_container .thankyoupage {
+    padding-top: 0 !important;
+    padding-bottom: 0;
+}
+
+.thankyoupage .container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.thankyou-image img {
+    width: 100%;
+}
+
+.thankyou-left {
+    padding: 20px 25px;
+    padding-bottom: 0;
+}
+
+.main_container.menu-flex-1 {
+    background: #ebeff6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankyou-left h1 {
+    font-weight: bold;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.thankyou-left .verify-image {
+    text-align: center;
+}
+
+.thankyou-left .verify-image img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.thankyou-left p {
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    font-weight: 500;
+}
+
+
+.thankyou-left .space-between-flex {
+    flex-direction: column;
+    text-align: center;
+}
+
+.thankyou-left .space-between-flex span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.thankyou-left .float-right {
+    background: #2b80ae !important;
+    border-color: #2b80ae !important;
+    margin-top: 10px;
+}
+    
+.thankyou-left .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.thankyou-left .row .space-between-flex {
+    width: 100%;
+}   
+/*Thankyou Page End*/   
+  
+/*Welcome Page*/
+@media screen and (max-width: 800px) and (min-width: 320px) {
+    .main_container.menu-flex{
+        padding-top: 0;
+    }
+    
+    .applicationStepwelcomepage .row-1{
+         flex-direction: column;
+        justify-content: unset;
+    }
+    
+    .applicationStepwelcomepage .landingpage{
+        height: 100%;
+    }
+    
+    .applicationStepwelcomepage .landingpage img{
+        position: relative;
+        top: 0;
+        transform: none;
+        width: 100%;
+    }
+    
+    .applicationStepwelcomepage .align-center-1{
+        position: relative;
+        top: 0;
+        transform: none;
+        margin: 10px auto;
+    }
+    
+    .container-fluid.text-center.applicationStepwelcomepage {
+        padding: 0;
+    }
+}
+
+/*WelcomePage End*/
+
+/*Thank You*/
+@media screen and (max-width: 800px) and (min-width: 320px) {
+    .main_container.menu-flex-1 {
+        padding-top: 0;
+    }
+
+    .thankyoupage .container {
+        flex-direction: column-reverse;
+    }
+
+    .thankyou-left {
+        padding: 10px 10px;
+    }
+
+    .thankyou-left .row {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+    }
+
+    .thankyou-left .row .space-between-flex {
+        display: block;
+    }
+
+    .thankyou-page .col-md-6 .btn.btn-secondary.float-right {
+        width: 100%;
+        max-width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .thankyou-left .row .space-between-flex span {
+        display: block;
+    }
+    
+    .thankyoupage .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .col-md-8.mb-3.space-between-flex.yourdocuments h3{
+        font-size:18px;
+    }
+    .download-all-button{
+        margin-top:0 !important;
+        width: 100%;
+        max-width: 50%;
+    }
+    .thankyou-left .space-between-flex{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 475px) {
+    .thankyou-left h1{
+        font-size: 20px;
+    }
+    
+    .thankyou-left p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 475px) and (min-width: 320px) {
+    .thankyou-left h1{
+        font-size: 14px;
+    }
+    
+    .thankyou-left p{
+        font-size: 12px;
+    }
+    
+    .thankyou-page .col-md-6 span.lead.ml-3{
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (min-width:801px){
+    .col-md-8.mb-3.space-between-flex.yourdocuments {
+    flex-direction: row;
+    
+    }
+    .col-md-8.mb-3.space-between-flex.yourdocuments h3{
+        font-size:20px;
+        margin-right: 25px;
+    }
+     .download-all-button{
+        margin-top:-13px !important;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 768px) {
+    #download-all-button{
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    }
+}
+  .SHPoweredBy {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.snaphop-black {
+    color: #000000;
+}
+/*Footer*/
+</style>
+{{{page.js}}}
+</head>
+<body>
+<div class="overlay-fix"></div>
+<span id="organizationMeta" data-organization-id="{{organizationId}}"></span>
+<!--New Header Code Changes-->
+<header class="main-header">
+    <!-- header top -->
+    <div class="header-top light black-bg-3">
+        <div class="container clearfix">
+            <!--Top Left-->
+            <div class="top-left pull-left">
+                <ul class="links-nav clearfix">
+                    <!--<li><i class="fa fa-phone"></i>07 3228 8400</li>-->
+                    <!--    <li><img src="https://c240120.ssl.cf1.rackcdn.com/fcec7c4e-594a-11ea-86af-42010a8a0fee">07 3228 8400</li>
+                                    -->
+                </ul>
+            </div>
+
+            <!--Top Right-->
+            <div class="top-right pull-right">
+                <div class="social-links clearfix">
+                    <a href="https://www.facebook.com/Optimum.Group.AU" target="_blank"><span class="fa fa-facebook"></span></a>
+                    <a href="https://twitter.com/#!/OptimumRecruit" target="_blank"><span class="fa fa-twitter"></span></a>
+                    <a href="https://www.linkedin.com/company/optimum-consulting-group?trk=hb_tab_compy_id_749929" target="_blank"><span class="fa fa-linkedin"></span></a>
+                    <a href="https://www.instagram.com/optimumconsulting/" target="_blank"><span class="fa fa-instagram"></span></a>
+                    <a href="https://www.youtube.com/channel/UCFpJNYblfzhjagUEY4gqR8g" target="_blank"><span class="fa fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Header-Upper-->
+    <div class="header-upper style-three dark-color">
+        <div class="container clearfix">
+            <div class="float-left logo-outer">
+                <div class="logo">
+                    <a href="https://www.ogroup.com.au/"><img src="https://www.ogroup.com.au/wp-content/uploads/2019/12/ogroup-website-2019.png" alt="Bremond" title="Bremond" /></a>
+                </div>
+            </div>
+
+            <div class="float-right upper-right clearfix">
+                <div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-lg">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li id="menu-item-546" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-546 dropdown">
+                                    <a title="About" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">About</a>
+                                    <ul role="menu" class="submenu">
+                                        <li id="menu-item-6479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6479"><a title="Who We Are" href="https://www.ogroup.com.au/who-we-are/">Who We Are</a></li>
+                                        <li id="menu-item-6481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6481">
+                                            <a title="Case Studies & Testimonials" href="https://www.ogroup.com.au/clients-case-studies/">Case Studies & Testimonials</a>
+                                        </li>
+                                        <li id="menu-item-6478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6478"><a title="Meet the Team" href="https://www.ogroup.com.au/meet-the-team/">Meet the Team</a></li>
+                                        <li id="menu-item-6475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6475"><a title="Contact Us" href="https://www.ogroup.com.au/contact/">Contact Us</a></li>
+                                    </ul>
+                                    <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                </li>
+                                <li id="menu-item-10659" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10659 dropdown">
+                                    <a title="Recruitment" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Recruitment</a>
+                                    <ul role="menu" class="submenu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10660">
+                                            <a title="Recruitment Overview" href="https://www.ogroup.com.au/recruitment-overview/">Recruitment Overview</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a title="Executive Search" href="https://www.ogroup.com.au/executive-search/">Executive Search</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10547">
+                                            <a title="Engineering & Construction" href="https://www.ogroup.com.au/engineering-and-construction-recruitment/">Engineering & Construction</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10708">
+                                            <a title="Supply Chain, Logistics & Manufacturing" href="https://www.ogroup.com.au/supply-chain-logistics-manufacturing/">Supply Chain, Logistics & Manufacturing</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10721"><a title="Accounting" href="https://www.ogroup.com.au/accounting-finance/">Accounting</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11401"><a title="Financial Services" href="https://www.ogroup.com.au/financial-services/">Financial Services</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13189"><a title="Superannuation" href="https://www.ogroup.com.au/superannuation/">Superannuation</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10738"><a title="IT & Digital" href="https://www.ogroup.com.au/it-recruitment/">IT & Digital</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10743">
+                                            <a title="Administration & Office Support" href="https://www.ogroup.com.au/administration-office-support/">Administration & Office Support</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10750">
+                                            <a title="Professional Services" href="https://www.ogroup.com.au/professional-services/">Professional Services</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1848">
+                                            <a title="Capability Assessments" href="https://www.ogroup.com.au/capability-assessment/">Capability Assessments</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                </li>
+                                <li id="menu-item-547" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-547 dropdown">
+                                    <a title="Consulting" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Consulting</a>
+                                    <ul role="menu" class="submenu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561"><a title="Consulting Overview" href="https://www.ogroup.com.au/overview-consulting/">Consulting Overview</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1726"><a title="Employee Experience" href="https://www.ogroup.com.au/employee-experience/">Employee Experience</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1697">
+                                            <a title="Workplace Foundations" href="https://www.ogroup.com.au/workplace-foundations/">Workplace Foundations</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9032">
+                                            <a title="Downsizing & Outplacement" href="https://www.ogroup.com.au/downsizing-outplacement-services/">Downsizing & Outplacement</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1710">
+                                            <a title="Performance Framework" href="https://www.ogroup.com.au/performance-framework-2/">Performance Framework</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1749"><a title="Outsourced HR Team" href="https://www.ogroup.com.au/outsourced-hr-team/">Outsourced HR Team</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5208"><a title="Employment Law" href="https://www.ogroup.com.au/employment-law/">Employment Law</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11518">
+                                            <a title="Optimum Business Success Program" href="https://www.ogroup.com.au/optimum-business-success-program/">Optimum Business Success Program</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                </li>
+                                <li id="menu-item-550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-550 dropdown">
+                                    <a title="Job Seekers" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Job Seekers</a>
+                                    <ul role="menu" class="submenu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6499"><a title="Search Vacancies" href="http://jobs.ogroup.com.au/">Search Vacancies</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6942"><a title="Register With Us" href="http://jobs.ogroup.com.au/">Register With Us</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10156">
+                                            <a title="Premium Career Support" href="https://www.ogroup.com.au/career-support-platform/">Premium Career Support</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10049"><a title="FAQ's" href="https://www.ogroup.com.au/frequently-asked-questions-faq/">FAQ’s</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9123"><a title="Work Rights Check" href="https://www.ogroup.com.au/work-rights-check/">Work Rights Check</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2132">
+                                            <a title="Timesheet Login" href="https://optimumconsulting.astutepayroll.com/optimumconsulting/login">Timesheet Login</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                </li>
+                                <li id="menu-item-10904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10904 dropdown">
+                                    <a title="HR Marketplace" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">HR Marketplace</a>
+                                    <ul role="menu" class="submenu" style="display: none;">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9574"><a title="Optimum Surveys" href="https://www.ogroup.com.au/optimum-surveys/">Optimum Surveys</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9575"><a title="Optimum Performance" href="https://www.ogroup.com.au/optimum-performance/">Optimum Performance</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6585"><a title="Optimum Workplace" href="https://www.ogroup.com.au/optimum-workplace/">Optimum Workplace</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10197">
+                                            <a title="Improve Recruitment Experience" href="https://www.ogroup.com.au/improve-recruitment-experience/">Improve Recruitment Experience</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9245">
+                                            <a title="Clear Calm & Ready Program" href="https://www.ogroup.com.au/clear-calm-ready-program/">Clear Calm & Ready Program</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                </li>
+                                <li id="menu-item-10431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10431">
+                                    <a title="Oblog" href="https://www.ogroup.com.au/oblog/" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Oblog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- Main Menu End-->
+                    <div class="outer-box">
+                        <!--Search Box-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle non-active" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel for-desktop" aria-labelledby="dropdownMenu3" x-placement="bottom-start">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form action="https://www.ogroup.com.au/" method="get">
+                                                <div class="form-group">
+                                                    <input type="search" placeholder="Search Here" name="s">
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="reservation-form-btn consult-form-btn"><span class="icon flaticon-menu-options"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="dropdown-menu pull-right search-panel for-mobile" aria-labelledby="dropdownMenu3">
+            <li class="panel-outer">
+                <div class="form-container">
+                    <form action="https://www.ogroup.com.au" method="get">
+                        <div class="form-group">
+                            <input type="search" placeholder="Search Here" name="s">
+                            <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--End Header Upper-->
+
+    <!--Sticky Header-->
+    <div class="sticky-header">
+        <div class="container clearfix">
+            <!--Logo-->
+            <div class="logo float-left">
+                <a href="https://www.ogroup.com.au/"><img src="https://www.ogroup.com.au/wp-content/uploads/2019/12/ogroup-website-2019.png" alt="Bremond" title="Bremond" /></a>
+            </div>
+
+            <!--Right Col-->
+            <div class="right-col float-right">
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-lg">
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li id="menu-item-546" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-546 dropdown">
+                                <a title="About" href="#" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">About</a>
+                                <ul role="menu" class="submenu">
+                                    <li id="menu-item-6479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6479"><a title="Who We Are" href="https://www.ogroup.com.au/who-we-are/">Who We Are</a></li>
+                                    <li id="menu-item-6481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6481">
+                                        <a title="Case Studies & Testimonials" href="https://www.ogroup.com.au/clients-case-studies/">Case Studies & Testimonials</a>
+                                    </li>
+                                    <li id="menu-item-6478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6478"><a title="Meet the Team" href="https://www.ogroup.com.au/meet-the-team/">Meet the Team</a></li>
+                                    <li id="menu-item-6475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6475"><a title="Contact Us" href="https://www.ogroup.com.au/contact/">Contact Us</a></li>
+                                </ul>
+                                <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                            </li>
+                            <li id="menu-item-10659" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10659 dropdown">
+                                <a title="Recruitment" href="https://www.ogroup.com.au/recruitment-overview/" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">
+                                    Recruitment
+                                </a>
+                                <ul role="menu" class="submenu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10660"><a title="Recruitment Overview" href="https://www.ogroup.com.au/recruitment-overview/">Recruitment Overview</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a title="Executive Search" href="https://www.ogroup.com.au/executive-search/">Executive Search</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10547">
+                                        <a title="Engineering & Construction" href="https://www.ogroup.com.au/engineering-and-construction-recruitment/">Engineering & Construction</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10708">
+                                        <a title="Supply Chain, Logistics & Manufacturing" href="https://www.ogroup.com.au/supply-chain-logistics-manufacturing/">Supply Chain, Logistics & Manufacturing</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10721"><a title="Accounting" href="https://www.ogroup.com.au/accounting-finance/">Accounting</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11401"><a title="Financial Services" href="https://www.ogroup.com.au/financial-services/">Financial Services</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13189"><a title="Superannuation" href="https://www.ogroup.com.au/superannuation/">Superannuation</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10738"><a title="IT & Digital" href="https://www.ogroup.com.au/it-recruitment/">IT & Digital</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10743">
+                                        <a title="Administration & Office Support" href="https://www.ogroup.com.au/administration-office-support/">Administration & Office Support</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10750"><a title="Professional Services" href="https://www.ogroup.com.au/professional-services/">Professional Services</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1848">
+                                        <a title="Capability Assessments" href="https://www.ogroup.com.au/capability-assessment/">Capability Assessments</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                            </li>
+                            <li id="menu-item-547" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-547 dropdown">
+                                <a title="Consulting" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Consulting</a>
+                                <ul role="menu" class="submenu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561"><a title="Consulting Overview" href="https://www.ogroup.com.au/overview-consulting/">Consulting Overview</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1726"><a title="Employee Experience" href="https://www.ogroup.com.au/employee-experience/">Employee Experience</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1697"><a title="Workplace Foundations" href="https://www.ogroup.com.au/workplace-foundations/">Workplace Foundations</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9032">
+                                        <a title="Downsizing & Outplacement" href="https://www.ogroup.com.au/downsizing-outplacement-services/">Downsizing & Outplacement</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1710">
+                                        <a title="Performance Framework" href="https://www.ogroup.com.au/performance-framework-2/">Performance Framework</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1749"><a title="Outsourced HR Team" href="https://www.ogroup.com.au/outsourced-hr-team/">Outsourced HR Team</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5208"><a title="Employment Law" href="https://www.ogroup.com.au/employment-law/">Employment Law</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11518">
+                                        <a title="Optimum Business Success Program" href="https://www.ogroup.com.au/optimum-business-success-program/">Optimum Business Success Program</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                            </li>
+                            <li id="menu-item-550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-550 dropdown">
+                                <a title="Job Seekers" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Job Seekers</a>
+                                <ul role="menu" class="submenu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6499"><a title="Search Vacancies" href="http://jobs.ogroup.com.au/">Search Vacancies</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6942"><a title="Register With Us" href="http://jobs.ogroup.com.au/">Register With Us</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10156">
+                                        <a title="Premium Career Support" href="https://www.ogroup.com.au/career-support-platform/">Premium Career Support</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10049"><a title="FAQ's" href="https://www.ogroup.com.au/frequently-asked-questions-faq/">FAQ’s</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9123"><a title="Work Rights Check" href="https://www.ogroup.com.au/work-rights-check/">Work Rights Check</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2132">
+                                        <a title="Timesheet Login" href="https://optimumconsulting.astutepayroll.com/optimumconsulting/login">Timesheet Login</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                            </li>
+                            <li id="menu-item-10904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10904 dropdown">
+                                <a title="HR Marketplace" href="https://www.ogroup.com.au/hr-marketplace/" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">
+                                    HR Marketplace
+                                </a>
+                                <ul role="menu" class="submenu" style="display: none;">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9574"><a title="Optimum Surveys" href="https://www.ogroup.com.au/optimum-surveys/">Optimum Surveys</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9575"><a title="Optimum Performance" href="https://www.ogroup.com.au/optimum-performance/">Optimum Performance</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6585"><a title="Optimum Workplace" href="https://www.ogroup.com.au/optimum-workplace/">Optimum Workplace</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10197">
+                                        <a title="Improve Recruitment Experience" href="https://www.ogroup.com.au/improve-recruitment-experience/">Improve Recruitment Experience</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9245">
+                                        <a title="Clear Calm & Ready Program" href="https://www.ogroup.com.au/clear-calm-ready-program/">Clear Calm & Ready Program</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                            </li>
+                            <li id="menu-item-10431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10431">
+                                <a title="Oblog" href="https://www.ogroup.com.au/oblog/" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Oblog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+            </div>
+        </div>
+    </div>
+    <!--End Sticky Header-->
+</header>
+
+<!--New Header Code Changes End-->
+
+<div class="main_container">
+    <a href="#top" class="mmyclasstop"></a>
+    {{#applicationModel.currentForm}}
+    <div class="container">
+        <div class="percentage">{{applicationModel.meta.progress}}</div>
+        
+        <div class="percentage-two">
+            <div class="percent-sub-div">Completion %:<span></span></div>
+        </div>
+        
+        <div class="save-and-exit">
+            <a class="btn mr-1 save-exit-button"  id="applicationSkipButton" data-validate="false">Save & Exit</a>
+        </div>
+    </div>
+  
+    <script>
+        var inprogress = 0;
+    </script>
+        
+    {{#applicationModel.allForms}}        
+        {{^completed}}
+            <script>
+               $(document).ready(function() {
+                var tag = $('#applicationNextButton').attr("href");
+                    $('#applicationNextButton').each(function() {
+                        if (tag.indexOf('completed') > 0 ) {
+                                $(this).addClass('last-btn');
+                                var cut = window.location.href;
+                                cut = cut.split('.xyz/')[0]; 
+                                cut = cut + '.xyz/onboard/';
+                                var onboardId = "{{applicationModel.id}}";
+                                var organizationId = "{{applicationModel.organizationId}}";
+                                var formId = "{{id}}";
+                                var url = cut + organizationId + '/application/' + onboardId + '/' + formId;
+                                $(".last-btn").attr("href",url);
+                            }else {
+                                      
+                               }
+                    });
+            });
+               var inprogress = 1;
+               var notcm = '';
+               if(notcm == ''){
+                if(window.location.href.indexOf('#book') > 0) {
+                    if(window.location.href.indexOf("#tag") == -1){
+                        var cut = window.location.href;
+                           cut = cut.split('.xyz/')[0]; 
+                           cut = cut + '.xyz/onboard/';
+                           var onboardId = "{{applicationModel.id}}";
+                           var organizationId = "{{applicationModel.organizationId}}";
+                           var formId = "{{id}}";
+                           var url = cut + organizationId + '/application/' + onboardId + '/' + formId;
+                        window.location.href = url + "#tag";
+                        }            
+                    }
+            }
+            </script>
+        {{/completed}}
+    {{/applicationModel.allForms}}
+    
+    <script>
+    if(inprogress == 0){
+        $(".overlay-fix").css("display", "block");        
+        if(window.location.href.indexOf("#thanks") == -1){
+            var cutthanks = window.location.href;
+            cutthanks = cutthanks.split('.xyz/')[0]; 
+            cutthanks = cutthanks + '.xyz/onboard/';
+            var onboardIdThanks = "{{applicationModel.id}}";
+            var organizationIdThanks = "{{applicationModel.organizationId}}";
+            var formIdThanks = "{{id}}";
+            var urlThanks = cutthanks + organizationIdThanks + '/application/' + onboardIdThanks  + '/completed';
+            window.location.href = urlThanks + "#thanks";
+        }
+    }
+    </script>
+  
+    <div class="progress-bar">
+        <div class="nav nav-tabs step-anchor pro-ul">
+            {{#applicationModel.allForms}}
+                {{#current}}
+                    {{#completed}}
+                    <button id="step{{step}}" class="pro-li unticket active is-active" type="button"><a class="pro-li-a"></a></button> 
+                    {{/completed}}
+          
+                    {{^completed}}
+                    <button id="step{{step}}" class="pro-li unticket active" type="button"><a class="pro-li-a"></a></button> 
+                    {{/completed}}
+              
+                 {{/current}}
+                 
+                 {{^current}}
+                    {{#completed}}
+                    <button id="step{{step}}" class="pro-li save" type="button"><a class="pro-li-a"></a></button> 
+                    {{/completed}}
+                    
+                    {{^completed}}
+                        {{#inProgress}}
+                        <button id="step{{step}}" class="pro-li unticket" type="button"><a class="pro-li-a"></a></button> 
+                        {{/inProgress}}
+                        
+                        {{^inProgress}}
+                        <button id="step{{step}}" class="pro-li unticket" type="button"><a class="pro-li-a"></a></button> 
+                        {{/inProgress}}
+                    {{/completed}}
+                 {{/current}}
+            {{/applicationModel.allForms}}
+         </div>
+    </div>
+ 
+    {{#applicationModel.allForms}}
+    <style>
+        #step{{step}}:after{
+            content: '{{label}}';
+            position: absolute;
+            bottom: 0;
+            width: 90%;
+            left: -7px;
+            top: 56px;
+            text-align: center;
+            color: grey;
+         
+        }
+        {{#last}}
+       
+        #step{{step}} .pro-li-a:before{
+            background: none !important;
+        }       
+        {{/last}}
+    </style>
+  
+  
+    {{/applicationModel.allForms}}
+  
+    <div class="container">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="allpart">
+                <div class="part-main active">                  
+                {{#applicationModel.prevForms}}
+                    {{#current}}
+                    <button class="mob-li mb-cm" type="button">
+                       <a class="mobile-li-a"></a>
+                       <span class="same-none-click">{{label}}</span>
+                    </button>
+                    {{/current}}
+                    {{^current}}
+                        {{#completed}}
+                        <button class="mob-li mb-cm save" type="button">
+                           <a class="mobile-li-a"></a>
+                           <span class="same-none-click">{{label}}</span>
+                        </button>
+                        {{/completed}}
+                        
+                        {{^completed}}
+                            {{#inProgress}}
+                            <button class="mob-li mb-cm" type="button">
+                               <a class="mobile-li-a"></a>
+                               <span class="same-none-click">{{label}}</span>
+                            </button> 
+                            {{/inProgress}}
+                            
+                            {{^inProgress}}
+                            <button class="mob-li mb-cm" type="button">
+                               <a class="mobile-li-a"></a>
+                               <span class="same-none-click">{{label}}</span>
+                            </button> 
+                            {{/inProgress}}
+                        {{/completed}}
+                        {{/current}}
+                {{/applicationModel.prevForms}}
+                    
+                <h3 class="Assignment-Confirmation-head">{{applicationModel.currentForm.label}}</h3>
+                <p class="Assignment-p">{{applicationModel.currentForm.instruction}}</p>
+                    
+                <span id="fileUploadMeta" data-validate-uri="{{applicationModel.fileUploadValidateUri}}" data-process-uri="{{applicationModel.fileUploadProcessUri}}"></span>
+                <form action="{{applicationModel.actionUri}}" method="post" id="applicationForm">
+                  <input type="hidden" name="csrf" value="{{page.csrf}}">
+                    <div class="mb-3">{{{applicationModel.currentFormHtml}}}</div>
+                    
+                    {{#applicationModel.prevUri}}
+                        <a class="btn btn-back btn-prev" href="{{applicationModel.prevUri}}" id="applicationPrevButton" data-validate="false">{{applicationModel.prevLabel}}</a>
+                    {{/applicationModel.prevUri}}
+                        
+                    {{#applicationModel.nextUri}}
+                        <a class="btn btn-primary btn-save-con{{#isAdobeSign}} d-none{{/isAdobeSign}}" href="{{applicationModel.nextUri}}" id="applicationNextButton" data-validate="true">{{applicationModel.nextLabel}}</a>
+                    {{/applicationModel.nextUri}}
+                           
+                    {{#applicationModel.skipUri}}
+                        <a class="btn btn-back float-right mr-1 skip-button" href="{{applicationModel.skipUri}}" id="applicationSkipButton" data-validate="false">{{applicationModel.skipLabel}}</a>
+                    {{/applicationModel.skipUri}}
+                    
+                    <br><br><br>
+                </form>
+                
+                {{#applicationModel.nextForms}}
+                    {{#current}}
+                        <button class="mob-li mb-cm" type="button">
+                            <a class="mobile-li-a"></a>
+                            <span class="same-none-click">{{label}}</span>
+                        </button>
+                    {{/current}}
+                    
+                    {{^current}}
+                        {{#completed}}
+                            <button class="mob-li mb-cm save" type="button">
+                                <a class="mobile-li-a"></a>
+                                <span class="same-none-click">{{label}}</span>
+                            </button>
+                        {{/completed}}
+                        
+                        {{^completed}}
+                            {{#inProgress}}
+                                <button class="mob-li mb-cm" type="button">
+                                    <a class="mobile-li-a"></a>
+                                    <span class="same-none-click">{{label}}</span>
+                                </button> 
+                             {{/inProgress}}
+                             
+                             {{^inProgress}}
+                                <button class="mob-li mb-cm" type="button">
+                                    <a class="mobile-li-a"></a>
+                                    <span class="same-none-click">{{label}}</span>
+                                </button> 
+                             {{/inProgress}}
+                        {{/completed}}
+                    {{/current}}
+                {{/applicationModel.nextForms}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/applicationModel.currentForm}}
+    {{#applicationStep.COMPLETE}}
+    <div class="thankyou-page thankyoupage">
+        <div class="container">
+            <div class="thankyou-left">
+                <input id="expiredate" class="expire-date" value="{{applicationModel.meta.dueDate}}"/>
+                
+                <div class="verify-image">
+                    <img src="https://res.cloudinary.com/eleorex/image/upload/v1656430367/Optimum/03c2679a-70e0-445b-aeb8-c712169175ba_1_bqojwy.png" alt="">
+                </div>
+                
+                <h1>Thank you for completing your online <br> registration. Your Optimum consultant <br>
+will be back in touch shortly.</h1>
+                <p class="lead">You can download copies of the completed compliance documents below for your records.</p>
+                <div class="mt-4">
+                    <div class="col-md-8 mb-3 space-between-flex yourdocuments">
+                       <h3>Your Documents:</h3>
+                    <a class="download-all-button btn btn-secondary float-right" id="download-all-button" >Download All</a> 
+                    </div>
+                    <div class="row mt-4">
+                        {{#applicationModel.allForms}}
+                        <div class="col-md-6 mb-3 space-between-flex">
+                            <span class="lead ml-3">{{label}}</span>
+                            {{#isAdobeSign}}
+                            <a class="btn btn-secondary float-right" href="{{esignDownloadUri}}">Download</a>
+                            {{/isAdobeSign}}
+                            {{#isStandard}}
+                            <a class="btn btn-secondary float-right" href="{{formDownloadUri}}">Download</a>
+                            {{/isStandard}}
+                        </div>
+                        {{/applicationModel.allForms}}
+                    </div>
+                </div>
+            </div>
+            <div class="thankyou-image">
+                <img src="https://res.cloudinary.com/eleorex/image/upload/v1656430288/Optimum/ThankYouPage_jmdoud.png" alt="">
+            </div>
+        </div>
+    </div>
+    {{/applicationStep.COMPLETE}}
+    {{#applicationStep.WELCOME}}
+    <div class="container-fluid text-center applicationStepwelcomepage">
+        <div class="row-1">
+            
+           <div class="landingpage">
+                <img src="https://res.cloudinary.com/eleorex/image/upload/v1656425092/Optimum/LandingPage_hfzjbe.png" alt="">
+           </div>
+            
+            <div class="col-md-6 align-center-1">
+                <div class="float-left welcome-float-left">
+                    <div class="welcome-available">
+                        <h1>Hi {{applicationModel.meta.firstName}}, <br/>Welcome to your <br/>Optimum online <br/>registration</h1>
+                        <a class="btn btn-primary mt-3 new-welcome-uri" href="">Click here to get started</a>
+                    </div>
+                    <div class="welcome-not-available">
+                        <h1>Welcome {{applicationModel.meta.firstName}}</h1>
+                        <p>Unfortunately, your compliance record has been expired or closed. Please get in contact with your recruitment representative.</p>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{#applicationModel.meta.isAvailable}} 
+    <script>
+    $('.welcome-not-available').addClass('remove-element');
+    $('.welcome-available').removeClass('remove-element');    
+    </script>
+    {{/applicationModel.meta.isAvailable}}
+    {{^applicationModel.meta.isAvailable}} 
+    <script>
+    $('.welcome-not-available').removeClass('remove-element');
+    $('.welcome-available').addClass('remove-element');
+    </script>
+    {{/applicationModel.meta.isAvailable}}
+    <script>
+    var uuu = "{{applicationModel.uri}}" + "#book";
+    $(".new-welcome-uri").attr("href", uuu);
+    </script>
+    {{/applicationStep.WELCOME}}
+</div>
+<div class="SHPoweredBy">
+	<span class="snaphop-black">Powered by</span> <a href="https://snaphop.com/" target="_blank"><strong class="snaphop-black">Snap</strong><strong class="snaphop-red">Hop</strong></a>
+</div>
+<!--New Footer Code Changes-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="widgets-section">
+            <div class="row clearfix">
+                <div id="bunch_about_us-2" class="col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-column footer-widget widget_bunch_about_us">
+                    <div class="about-widget">
+                        <div class="footer-logo">
+                            <figure>
+                                <a href="https://www.ogroup.com.au/">
+                                    <noscript><img src="https://www.ogroup.com.au/wp-content/uploads/2020/02/ogroup-white-website.png" alt="Awesome Image" /></noscript>
+                                    <img
+                                        class="ls-is-cached lazyloaded"
+                                        src="https://www.ogroup.com.au/wp-content/uploads/2020/02/ogroup-white-website.png"
+                                        data-src="https://www.ogroup.com.au/wp-content/uploads/2020/02/ogroup-white-website.png"
+                                        alt="Awesome Image"
+                                    />
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="widget-content">
+                            <div class="text">
+                                Optimum Consulting has been focused on people and performance in the workplace since 2003. Through an amazing team with a unique diversity of skills, we offer a select suite of services to Attract, Engage,
+                                Retain and Develop a productive and agile workplace.
+                            </div>
+                            <ul class="social-icon-three">
+                                <li>
+                                    <a href="https://www.facebook.com/Optimum.Group.AU" target="_blank"><span class="fa fa-facebook"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/#!/OptimumRecruit" target="_blank"><span class="fa fa-twitter"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/optimum-consulting-group?trk=hb_tab_compy_id_749929" target="_blank"><span class="fa fa-linkedin"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/optimumconsulting/" target="_blank"><span class="fa fa-instagram"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCFpJNYblfzhjagUEY4gqR8g" target="_blank"><span class="fa fa-youtube"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="nav_menu-4" class="col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-column footer-widget widget_nav_menu">
+                    <h2 class="widget-title">Our Services</h2>
+                    <div class="menu-services-container">
+                        <ul id="menu-services" class="menu">
+                            <li id="menu-item-8482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8482"><a href="https://www.ogroup.com.au/workplace-foundations/">Workplace Foundations</a></li>
+                            <li id="menu-item-8483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8483"><a href="https://www.ogroup.com.au/performance-framework-2/">Performance Framework</a></li>
+                            <li id="menu-item-8484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8484"><a href="https://www.ogroup.com.au/outsourced-hr-team/">Outsourced HR Team</a></li>
+                            <li id="menu-item-10779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10779"><a href="https://www.ogroup.com.au/recruitment-overview/">Permanent Recruitment</a></li>
+                            <li id="menu-item-10780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10780"><a href="https://www.ogroup.com.au/recruitment-overview/">Contract Recruitment</a></li>
+                            <li id="menu-item-9084" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9084"><a href="https://www.ogroup.com.au/downsizing-outplacement-services/">Downsizing & Outplacement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav_menu-2" class="col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-column footer-widget widget_nav_menu">
+                    <h2 class="widget-title">Quick Links</h2>
+                    <div class="menu-quick-link-container">
+                        <ul id="menu-quick-link" class="menu">
+                            <li id="menu-item-8901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5688 current_page_item menu-item-8901">
+                                <a href="https://www.ogroup.com.au/" aria-current="page">Home</a>
+                            </li>
+                            <li id="menu-item-6879" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6879"><a href="https://www.ogroup.com.au/who-we-are/">Who We Are</a></li>
+                            <li id="menu-item-6880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6880"><a href="https://www.ogroup.com.au/meet-the-team/">Meet the Team</a></li>
+                            <li id="menu-item-6881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6881"><a href="https://www.ogroup.com.au/contact/">Contact Us</a></li>
+                            <li id="menu-item-1833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1833"><a href="https://jobs.ogroup.com.au/">Browse Vacancies</a></li>
+                            <li id="menu-item-9083" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9083"><a href="https://optimumconsulting.astutepayroll.com/optimumconsulting/login">Timesheets Login</a></li>
+                            <li id="menu-item-9151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9151"><a href="https://www.ogroup.com.au/privacy/">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="custom_html-5" class="widget_text col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-column footer-widget widget_custom_html">
+                    <h2 class="widget-title">Newsletter</h2>
+                    <div class="textwidget custom-html-widget">
+                        <div class="oblog-form">
+                            <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
+                            <style type="text/css">
+                                #mc_embed_signup {
+                                    background: #fff;
+                                    clear: left;
+                                    font: 14px Helvetica, Arial, sans-serif;
+                                }
+                                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                            </style>
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="//ogroup.us7.list-manage.com/subscribe/post?u=070b261c0b05787f1dbcb5894&id=145e47a279"
+                                    method="post"
+                                    id="mc-embedded-subscribe-form"
+                                    name="mc-embedded-subscribe-form"
+                                    class="validate"
+                                    target="_blank"
+                                    novalidate="novalidate"
+                                >
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label> <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true" />
+                                        </div>
+                                        <div class="mc-field-group"><label for="mce-FNAME">First Name </label> <input type="text" value="" name="FNAME" class="" id="mce-FNAME" /></div>
+                                        <div class="mc-field-group"><label for="mce-LNAME">Last Name </label> <input type="text" value="" name="LNAME" class="" id="mce-LNAME" /></div>
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                                        </div>
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_070b261c0b05787f1dbcb5894_145e47a279" tabindex="-1" value="" /></div>
+                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright-text">
+                <p><a href="#">Bremond</a> © 2018 All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--New Footer Code Changes End-->
+
+
+<div class="modal fade" id="alertModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h4">Alert</h5>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="embedModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h4">Embed</h5>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="modal-embed embed-responsive-item" src=""></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button" data-dismiss="modal">Done</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$(".skip-button").click(function (event) {
+    event.preventDefault();
+    $("#applicationForm input.form-control").val("");
+    $("#applicationForm .filter-option .filter-option-inner-inner").text("* Select Country");
+    var skipuri = $(".skip-button").attr("href");
+    window.location.href = skipuri;
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
+
+    if (isIE) {
+        $('.progress-bar').addClass('internetexplorer');
+    } else {
+        $('.progress-bar').removeClass('internetexplorer');
+    }
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $('div#alertModal button.btn.btn-primary').click(function(){
+    $('div#alertModal').modal('hide');
+});
+});
+</script>  
+
+ 
+<script>
+$(document).ready(function(){
+    var cutsave = window.location.href;
+    cutsave = cutsave.split('.xyz/')[0]; 
+    cutsave = cutsave + '.xyz/onboard/public/application/';
+    var url2 = "{{applicationModel.id}}";
+    var ur3 = "/welcome";
+    var urlmain = cutsave + url2 + ur3;
+    $(".save-exit-button").attr("href",urlmain);
+
+    if($(".Assignment-p:contains('!!!! MISSING !!!!')").length) {
+        $('.Assignment-p').text("");
+    }else{
+            
+    }
+        
+    var currentValue = $('.percentage').text();
+    var goalValue = "1";
+    var percentage = Math.floor(((currentValue / goalValue) * 100)) +"%";
+    $(".percentage-two span").text(percentage);
+    $(".embed-responsive-item").contents().find("h1").addClass("myClass");
+    
+    setInterval(function() {
+        if(jQuery('#adobeSignForm').attr('value') =="complete") {
+            $('.embed-responsive-4by3').addClass('is-active');
+            $('.ratio.ratio-16x9').addClass('is-active');
+        }else{
+            $('.embed-responsive-4by3').removeClass('is-active');
+            $('.ratio.ratio-16x9').removeClass('is-active');
+        }        
+     }, 3000);
+
+    setInterval(function() {
+        if($(".btn-save-con").hasClass("d-none")) {
+            $('.btn-prev').addClass('top-up');
+        }else{
+            $('.btn-prev').removeClass('top-up');
+        }
+    }, 0000);
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('.form-field-label:contains("Workers Compensation Insurance")').addClass('upld-1');
+    $('.upld-1').parents('div.form-group').addClass('form-group-one');
+    $('.form-field-label:contains("Public Indemnity Insurance")').addClass('upld-2');
+    $('.upld-2').parents('div.form-group').addClass('form-group-two');
+    $('.form-field-label:contains("Public Liability Insurance")').addClass('upld-3');
+    $('.upld-3').parents('div.form-group').addClass('form-group-three');
+    setInterval(function() {
+        if ($(".form-group-one input[type='hidden']").val() !== '') {
+            if ($(".form-group-one .w-100 p strong:contains('No File Submitted')").length) {
+                $('.form-group-one .w-100 p strong').text("");
+            }
+        }
+        if ($(".form-group-two input[type='hidden']").val() !== '') {
+            if ($(".form-group-two .w-100 p strong:contains('No File Submitted')").length) {
+                $('.form-group-two .w-100 p strong').text("");
+            }
+        }
+        if ($(".form-group-three input[type='hidden']").val() !== '') {
+            if ($(".form-group-three .w-100 p strong:contains('No File Submitted')").length) {
+                $('.form-group-three .w-100 p strong').text("");
+            }
+        }
+    });
+    if ($(".img-welcome").length > 0 || $(".thankyou-page").length > 0) {
+        $('.newheader').addClass('remove-margin');
+    } else {
+        $('.newheader').removeClass('remove-margin');
+    }
+});
+</script>
+
+<script>
+    $(".noclick").click(function (event) {
+        event.preventDefault();
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".sticky-header .navbar-collapse .navigation .menu-item.menu-item-has-children").removeAttr("id");
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $(".scroll-top").fadeIn();
+            } else {
+                $(".scroll-top").fadeOut();
+            }
+        });
+
+        $(".scroll-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("li#menu-item-546").hover(function () {
+            $("li#menu-item-546 .submenu").slideToggle(250);
+        });
+
+        $("li#menu-item-1009").hover(function () {
+            $("li#menu-item-1009 .submenu").slideToggle(250);
+        });
+
+        $("li#menu-item-547").hover(function () {
+            $("li#menu-item-547 .submenu").slideToggle(250);
+        });
+
+        $("li#menu-item-10659").hover(function () {
+            $("li#menu-item-10659 .submenu").slideToggle(250);
+        });
+
+        $("li#menu-item-550").hover(function () {
+            $("li#menu-item-550 .submenu").slideToggle(250);
+        });
+
+        $("li#menu-item-10904").hover(function () {
+            $("li#menu-item-10904 .submenu").slideToggle(250);
+        });
+
+        $(".sticky-header .menu-item-546").hover(function () {
+            $(".sticky-header .menu-item-546 .submenu").slideToggle(250);
+        });
+
+        $(".sticky-header .menu-item-547").hover(function () {
+            $(".sticky-header .menu-item-547 .submenu").slideToggle(250);
+        });
+
+        $(".sticky-header .menu-item-550").hover(function () {
+            $(".sticky-header .menu-item-550 .submenu").slideToggle(250);
+        });
+
+        $(".sticky-header .menu-item-1009").hover(function () {
+            $(".sticky-header .menu-item-1009 .submenu").slideToggle(250);
+        });
+
+        $(".sticky-header .menu-item-10659").hover(function () {
+            $(".sticky-header .menu-item-10659 .submenu").slideToggle(250);
+        });
+
+        $(".sticky-header .menu-item-10904").hover(function () {
+            $(".sticky-header .menu-item-10904 .submenu").slideToggle(250);
+        });
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() < 991) {
+            $(".main-header li.menu-item-has-children").unbind();
+        } else {
+        }
+    });
+
+    $( window ).on("load", function() {
+        if ($(window).width() < 991) {
+            $(".main-header li.menu-item-has-children").unbind();
+        }
+    });
+</script>
+
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 300) {
+            $(".main-header").addClass("darkHeader");
+        } else {
+            $(".main-header").removeClass("darkHeader");
+        }
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#dropdownMenu3").click(function () {
+            $(".dropdown").toggleClass("active");
+            $(".dropdown-menu").toggleClass("active");
+        });
+    });
+</script>
+
+<script>
+    $(document).mouseup(function (e) {
+        var container = $(".pull-right .form-container .form-group input");
+
+        var containertwo = $(".search-box-outer #dropdownMenu3");
+
+        if (!container.is(e.target) && container.has(e.target).length === 0 && !containertwo.is(e.target) && containertwo.has(e.target).length === 0) {
+            $(".search-box-outer .pull-right").removeClass("active");
+
+            $(".search-box-outer .dropdown").removeClass("active");
+
+            $(".for-mobile").removeClass("active");
+        }
+    });
+</script>
+
+<script>
+    $(".navbar-header .navbar-toggle").click(function () {
+        $(".navbar-collapse.collapse").slideToggle();
+    });
+
+    $(".main-menu .navigation .dropdown-btn").click(function () {
+        $(this).prev("ul").slideToggle();
+    });
+</script>
+
+<!--Landing Page Update UI-->
+<script>
+$( window ).on("load", function() {
+    if($('div').hasClass('applicationStepwelcomepage')){
+        $('.main_container').addClass('menu-flex');
+    }else{
+        $('.main_container').removeClass('menu-flex');
+    }
+    
+    if($('div').hasClass('thankyoupage')){
+        $('.main_container').addClass('menu-flex-1');
+    }else{
+        $('.main_container').removeClass('menu-flex-1');
+    }
+});
+$(document).ready(function(){
+    var urlPartOne = window.location.href;
+    urlPartOne = urlPartOne.split('.xyz/')[0];
+    urlPartOne = urlPartOne + '.xyz/onboard/';
+    var urlPartTwo = "{{applicationModel.organizationId}}";
+    var urlPartThree = "/application/downloadall/";
+    var urlPartFour = "{{applicationModel.id}}";
+    var urlFull = urlPartOne + urlPartTwo + urlPartThree + urlPartFour;
+    $(".download-all-button").attr("href",urlFull);
+  });
+</script>
+<script>
+$(document).ready(function(){
+  $('#startButton').removeClass('processStep2');
+  $('#applicationSkipButton').removeClass('processStep2');
+  $('#applicationPrevButton').removeClass('processStep');
+  $('#applicationSkipButtonNoSave').removeClass('processStep');
+  
+  $('#startButton').on('click', function() {
+    $(this).prop('disabled', true);
+    $(this).addClass('disableButton');
+    $(this).css('pointer-events', 'none');
+    $(this).html('Please Wait...');
+    $(this).css('opacity', '0.65');
+  });
+  
+  $('#applicationSkipButton').on('click', function() {
+    $(this).prop('disabled', true);
+    $(this).addClass('disableButton');
+    $(this).css('pointer-events', 'none');
+    $(this).html('Please Wait...');
+    $(this).css('opacity', '0.65');
+  });
+  
+  $('.skip-button').on('click', function() {
+    $(this).prop('disabled', true);
+    $(this).addClass('disableButton');
+    $(this).css('pointer-events', 'none');
+    $(this).html('Please Wait...');
+    $(this).css('opacity', '0.65');
+  });
+  
+  $('#applicationPrevButton').on('click', function() {
+    $(this).prop('disabled', true);
+    $(this).addClass('disableButtonPrevSkip');
+    $(this).css('pointer-events', 'none');
+    $(this).html('Please Wait...');
+    $(this).css('opacity', '0.65');
+  });
+  
+  $('#applicationSkipButtonNoSave').on('click', function() {
+    $(this).prop('disabled', true);
+    $(this).addClass('disableButtonPrevSkip');
+    $(this).css('pointer-events', 'none');
+    $(this).html('Please Wait...');
+    $(this).css('opacity', '0.65');
+  });
+  $('.new-welcome-uri').on('click', function() {
+    $(this).prop('disabled', true);    
+    $(this).addClass('disableButton');
+    $(this).css('pointer-events', 'none');
+    $(this).html('Please Wait...');
+    $(this).css('opacity', '0.65');
+  });
+});
+</script>
+</body>
+</html>
