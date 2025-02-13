@@ -4,11 +4,10 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="csrf" content="{{page.csrf}}">
-        <title>{{page.title}}</title>
-        <link rel="icon" href="https://c240120.ssl.cf1.rackcdn.com/f4f824ef-985f-11eb-a8d5-42010a8a0ff4" type="image/gif" sizes="16x16" />
         
-        {{{page.css}}}
+        <title>Optinum</title>
+        <link rel="icon" href="https://c240120.ssl.cf1.rackcdn.com/f4f824ef-985f-11eb-a8d5-42010a8a0ff4" type="image/gif" sizes="16x16" />
+                
         
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous"> 
         
@@ -4997,11 +4996,11 @@ form#applicationForm .file-upload-wrap .drag-text > * {
 }
 /*Footer*/
 </style>
-{{{page.js}}}
+
 </head>
 <body>
 <div class="overlay-fix"></div>
-<span id="organizationMeta" data-organization-id="{{organizationId}}"></span>
+
 <!--New Header Code Changes-->
 
 <div class="newheader">
@@ -5104,9 +5103,9 @@ form#applicationForm .file-upload-wrap .drag-text > * {
 
 <div class="main_container">
     <a href="#top" class="mmyclasstop"></a>
-    {{#applicationModel.currentForm}}
+    
     <div class="container">
-        <div class="percentage">{{applicationModel.meta.progress}}</div>
+        <div class="percentage"></div>
         
         <div class="percentage-two">
             <div class="percent-sub-div">Completion %:<span></span></div>
@@ -5120,47 +5119,6 @@ form#applicationForm .file-upload-wrap .drag-text > * {
     <script>
         var inprogress = 0;
     </script>
-        
-    {{#applicationModel.allForms}}        
-        {{^completed}}
-            <script>
-               $(document).ready(function() {
-                var tag = $('#applicationNextButton').attr("href");
-                    $('#applicationNextButton').each(function() {
-                        if (tag.indexOf('completed') > 0 ) {
-                                $(this).addClass('last-btn');
-                                var cut = window.location.href;
-                                cut = cut.split('.xyz/')[0]; 
-                                cut = cut + '.xyz/onboard/';
-                                var onboardId = "{{applicationModel.id}}";
-                                var organizationId = "{{applicationModel.organizationId}}";
-                                var formId = "{{id}}";
-                                var url = cut + organizationId + '/application/' + onboardId + '/' + formId;
-                                $(".last-btn").attr("href",url);
-                            }else {
-                                      
-                               }
-                    });
-            });
-               var inprogress = 1;
-               var notcm = '';
-               if(notcm == ''){
-                if(window.location.href.indexOf('#book') > 0) {
-                    if(window.location.href.indexOf("#tag") == -1){
-                        var cut = window.location.href;
-                           cut = cut.split('.xyz/')[0]; 
-                           cut = cut + '.xyz/onboard/';
-                           var onboardId = "{{applicationModel.id}}";
-                           var organizationId = "{{applicationModel.organizationId}}";
-                           var formId = "{{id}}";
-                           var url = cut + organizationId + '/application/' + onboardId + '/' + formId;
-                        window.location.href = url + "#tag";
-                        }            
-                    }
-            }
-            </script>
-        {{/completed}}
-    {{/applicationModel.allForms}}
     
     <script>
     if(inprogress == 0){
@@ -5178,166 +5136,77 @@ form#applicationForm .file-upload-wrap .drag-text > * {
     }
     </script>
   
-    <div class="progress-bar">
-        <div class="nav nav-tabs step-anchor pro-ul">
-            {{#applicationModel.allForms}}
-                {{#current}}
-                    {{#completed}}
-                    <button id="step{{step}}" class="pro-li unticket active is-active" type="button"><a class="pro-li-a"></a></button> 
-                    {{/completed}}
-          
-                    {{^completed}}
-                    <button id="step{{step}}" class="pro-li unticket active" type="button"><a class="pro-li-a"></a></button> 
-                    {{/completed}}
-              
-                 {{/current}}
-                 
-                 {{^current}}
-                    {{#completed}}
-                    <button id="step{{step}}" class="pro-li save" type="button"><a class="pro-li-a"></a></button> 
-                    {{/completed}}
-                    
-                    {{^completed}}
-                        {{#inProgress}}
-                        <button id="step{{step}}" class="pro-li unticket" type="button"><a class="pro-li-a"></a></button> 
-                        {{/inProgress}}
-                        
-                        {{^inProgress}}
-                        <button id="step{{step}}" class="pro-li unticket" type="button"><a class="pro-li-a"></a></button> 
-                        {{/inProgress}}
-                    {{/completed}}
-                 {{/current}}
-            {{/applicationModel.allForms}}
-         </div>
-    </div>
- 
-    {{#applicationModel.allForms}}
-    <style>
-        #step{{step}}:after{
-            content: '{{label}}';
-            position: absolute;
-            bottom: 0;
-            width: 90%;
-            left: -7px;
-            top: 56px;
-            text-align: center;
-            color: grey;
-         
-        }
-        {{#last}}
-       
-        #step{{step}} .pro-li-a:before{
-            background: none !important;
-        }       
-        {{/last}}
-    </style>
+    
+    
   
   
-    {{/applicationModel.allForms}}
+    
   
     <div class="container">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
             <div class="allpart">
                 <div class="part-main active">                  
-                {{#applicationModel.prevForms}}
-                    {{#current}}
+               
                     <button class="mob-li mb-cm" type="button">
                        <a class="mobile-li-a"></a>
-                       <span class="same-none-click">{{label}}</span>
+                       <span class="same-none-click"></span>
                     </button>
-                    {{/current}}
-                    {{^current}}
-                        {{#completed}}
                         <button class="mob-li mb-cm save" type="button">
                            <a class="mobile-li-a"></a>
-                           <span class="same-none-click">{{label}}</span>
+                           <span class="same-none-click"></span>
                         </button>
-                        {{/completed}}
                         
-                        {{^completed}}
-                            {{#inProgress}}
                             <button class="mob-li mb-cm" type="button">
                                <a class="mobile-li-a"></a>
-                               <span class="same-none-click">{{label}}</span>
+                               <span class="same-none-click"></span>
                             </button> 
-                            {{/inProgress}}
-                            
-                            {{^inProgress}}
                             <button class="mob-li mb-cm" type="button">
                                <a class="mobile-li-a"></a>
-                               <span class="same-none-click">{{label}}</span>
+                               <span class="same-none-click"></span>
                             </button> 
-                            {{/inProgress}}
-                        {{/completed}}
-                        {{/current}}
-                {{/applicationModel.prevForms}}
                     
-                <h3 class="Assignment-Confirmation-head">{{applicationModel.currentForm.label}}</h3>
-                <p class="Assignment-p">{{applicationModel.currentForm.instruction}}</p>
+                <h3 class="Assignment-Confirmation-head">Title3>
+                <p class="Assignment-p"></p>
                     
-                <span id="fileUploadMeta" data-validate-uri="{{applicationModel.fileUploadValidateUri}}" data-process-uri="{{applicationModel.fileUploadProcessUri}}"></span>
-                <form action="{{applicationModel.actionUri}}" method="post" id="applicationForm">
-                  <input type="hidden" name="csrf" value="{{page.csrf}}">
-                    <div class="mb-3">{{{applicationModel.currentFormHtml}}}</div>
+                <span id="fileUploadMeta" data-validate-uri="" data-process-uri="{{applicationModel.fileUploadProcessUri}}"></span>
+                <form action="" method="post" id="applicationForm">
+                  <input type="hidden" name="csrf" value="">
+                    <div class="mb-3"></div>
                     
-                    {{#applicationModel.prevUri}}
-                        <a class="btn btn-back btn-prev" href="{{applicationModel.prevUri}}" id="applicationPrevButton" data-validate="false">{{applicationModel.prevLabel}}</a>
-                    {{/applicationModel.prevUri}}
-                        
-                    {{#applicationModel.nextUri}}
-                        <a class="btn btn-primary btn-save-con{{#isAdobeSign}} d-none{{/isAdobeSign}}" href="{{applicationModel.nextUri}}" id="applicationNextButton" data-validate="true">{{applicationModel.nextLabel}}</a>
-                    {{/applicationModel.nextUri}}
-                           
-                    {{#applicationModel.skipUri}}
-                        <a class="btn btn-back float-right mr-1 skip-button" href="{{applicationModel.skipUri}}" id="applicationSkipButton" data-validate="false">{{applicationModel.skipLabel}}</a>
-                    {{/applicationModel.skipUri}}
+                        <a class="btn btn-back btn-prev" href="" id="applicationPrevButton" data-validate="false"></a>
+                    
+                        <a class="btn btn-primary btn-save-con d-none" href="" id="applicationNextButton" data-validate="true"></a>
+                    
+                        <a class="btn btn-back float-right mr-1 skip-button" href="" id="applicationSkipButton" data-validate="false"></a>
+                    
                     
                     <br><br><br>
                 </form>
-                
-                {{#applicationModel.nextForms}}
-                    {{#current}}
                         <button class="mob-li mb-cm" type="button">
                             <a class="mobile-li-a"></a>
-                            <span class="same-none-click">{{label}}</span>
+                            <span class="same-none-click"></span>
                         </button>
-                    {{/current}}
                     
-                    {{^current}}
-                        {{#completed}}
                             <button class="mob-li mb-cm save" type="button">
                                 <a class="mobile-li-a"></a>
-                                <span class="same-none-click">{{label}}</span>
+                                <span class="same-none-click"></span>
                             </button>
-                        {{/completed}}
-                        
-                        {{^completed}}
-                            {{#inProgress}}
                                 <button class="mob-li mb-cm" type="button">
                                     <a class="mobile-li-a"></a>
-                                    <span class="same-none-click">{{label}}</span>
+                                    <span class="same-none-click"></span>
                                 </button> 
-                             {{/inProgress}}
-                             
-                             {{^inProgress}}
                                 <button class="mob-li mb-cm" type="button">
                                     <a class="mobile-li-a"></a>
-                                    <span class="same-none-click">{{label}}</span>
+                                    <span class="same-none-click"></span>
                                 </button> 
-                             {{/inProgress}}
-                        {{/completed}}
-                    {{/current}}
-                {{/applicationModel.nextForms}}
                 </div>
             </div>
         </div>
     </div>
-    {{/applicationModel.currentForm}}
-    {{#applicationStep.COMPLETE}}
     <div class="thankyou-page thankyoupage">
         <div class="container">
             <div class="thankyou-left">
-                <input id="expiredate" class="expire-date" value="{{applicationModel.meta.dueDate}}"/>
+                <input id="expiredate" class="expire-date" value=""/>
                 
                 <div class="verify-image">
                     <img src="https://res.cloudinary.com/eleorex/image/upload/v1656430367/Optimum/03c2679a-70e0-445b-aeb8-c712169175ba_1_bqojwy.png" alt="">
@@ -5352,17 +5221,11 @@ will be back in touch shortly.</h1>
                     <a class="download-all-button btn btn-secondary float-right" id="download-all-button" >Download All</a> 
                     </div>
                     <div class="row mt-4">
-                        {{#applicationModel.allForms}}
                         <div class="col-md-6 mb-3 space-between-flex">
-                            <span class="lead ml-3">{{label}}</span>
-                            {{#isAdobeSign}}
-                            <a class="btn btn-secondary float-right" href="{{esignDownloadUri}}">Download</a>
-                            {{/isAdobeSign}}
-                            {{#isStandard}}
-                            <a class="btn btn-secondary float-right" href="{{formDownloadUri}}">Download</a>
-                            {{/isStandard}}
+                            <span class="lead ml-3"></span>
+                            <a class="btn btn-secondary float-right" href="">Download</a>
+                            <a class="btn btn-secondary float-right" href="">Download</a>
                         </div>
-                        {{/applicationModel.allForms}}
                     </div>
                 </div>
             </div>
@@ -5371,8 +5234,6 @@ will be back in touch shortly.</h1>
             </div>
         </div>
     </div>
-    {{/applicationStep.COMPLETE}}
-    {{#applicationStep.WELCOME}}
     <div class="container-fluid text-center applicationStepwelcomepage">
         <div class="row-1">
             
@@ -5383,34 +5244,33 @@ will be back in touch shortly.</h1>
             <div class="col-md-6 align-center-1">
                 <div class="float-left welcome-float-left">
                     <div class="welcome-available">
-                        <h1>Hi {{applicationModel.meta.firstName}}, <br/>Welcome to your <br/>Optimum online <br/>registration</h1>
+                        <h1>Hi , <br/>Welcome to your <br/>Optimum online <br/>registration</h1>
                         <a class="btn btn-primary mt-3 new-welcome-uri" href="">Click here to get started</a>
                     </div>
                     <div class="welcome-not-available">
-                        <h1>Welcome {{applicationModel.meta.firstName}}</h1>
+                        <h1>Welcome </h1>
                         <p>Unfortunately, your compliance record has been expired or closed. Please get in contact with your recruitment representative.</p>   
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {{#applicationModel.meta.isAvailable}} 
+     
     <script>
     $('.welcome-not-available').addClass('remove-element');
     $('.welcome-available').removeClass('remove-element');    
     </script>
-    {{/applicationModel.meta.isAvailable}}
-    {{^applicationModel.meta.isAvailable}} 
+    
     <script>
     $('.welcome-not-available').removeClass('remove-element');
     $('.welcome-available').addClass('remove-element');
     </script>
-    {{/applicationModel.meta.isAvailable}}
+    
     <script>
     var uuu = "{{applicationModel.uri}}" + "#book";
     $(".new-welcome-uri").attr("href", uuu);
     </script>
-    {{/applicationStep.WELCOME}}
+    
 </div>
 <div class="SHPoweredBy">
 	<span class="snaphop-black">Powered by</span> <a href="https://snaphop.com/" target="_blank"><strong class="snaphop-black">Snap</strong><strong class="snaphop-red">Hop</strong></a>
