@@ -1,0 +1,90 @@
+/* Contact Form Styling */
+.contact-form .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.contact-form .contact-view {
+    background: #014345;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact-form .title-one h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form .input-wrapper {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form .input-wrapper input, .contact-form .input-wrapper textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form .input-wrapper textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form .input-wrapper label {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Star Rating */
+.contact-form .star-rating {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-form .star-rating input {
+    display: none;
+}
+
+.contact-form .star-rating label {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.contact-form .star-rating input:checked ~ label {
+    color: #ffcc00;
+}
+
+/* Submit Button */
+.contact-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #d2305d;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #7e1d38;
+}
